@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "IBM Rational Team Concert"
-date:   2018-01-01 00:00:00 +0100
+title:  "Eclipse IBM Rational Team Concert"
+date:   2018-02-06 00:00:00 +0100
 categories:
 ---
 

@@ -21,12 +21,14 @@ description: >- # this means to ignore newlines until "baseurl:"
   Google search results) and in your feed.xml site description.
 baseurl: "/infoman" # the subpath of your site, e.g. /blog
 url: "https://baudo2048.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+#baseurl: "/sites/intesasanpaolo/arch/Shared%20Documents/ndce/from%20isp_prestiti/01_procedure_processo/site"
+#url: "https://troom-x.capgemini.com"
 twitter_username: jekyllrb
 github_username:  jekyll
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-tactile
+theme: minima
 plugins:
   - jekyll-feed
 
