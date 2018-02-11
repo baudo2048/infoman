@@ -85,7 +85,11 @@ Page - body of the window: contains views and editors
 
 View -
 
-Editor - quello dove si scrive il codice dei files.
+Editor - quello dove si scrive il codice dei files. An editor is a visual
+component within a workbench page. Hence pay attentions because it isn't
+the code itself but it is that ui component in which your code lives.
+
+![ui-editor]({{"/assets/img/eclipse-ui-editor.png"|absolute_url}})
 
 Widget ???
 
@@ -126,6 +130,29 @@ if (page == null)
 }
 {% endhighlight %}
 
+**Logging**
+For fastest msgbox you can use:
+
+{%highlight java %}
+
+{%endhighlight%}
+
+[Platform UI/Notification][notification]
+
+[notification]: https://wiki.eclipse.org/Platform_UI/Notifications
+
+
+![notification]({{"/assets/img/t-029c7b48.png" | absolute_url}})
+
+
+![event]({{"/assets/img/t-958e4d17.png" | absolute_url}})
+
+![trigger]({{"/assets/img/t-c9cc0de2.png" | absolute_url}})
+
+
+Per usare il meccanismo delle notification occorre utilizzare accanto ad esso
+un meccanismo di scheduling.
+
 **Extensions and extentions point**
 {% highlight java %}
 org.eclipse.ui.views
@@ -139,6 +166,11 @@ org.eclipse.ui
 
 **How to take over other installed plugin - Jazz Plugin Development**
 not much work.
+
+**Fragment vs Feature**
+![eclipse-jargon]({{"/assets/img/eclipse-jargon.png"|absolute_url}})
+
+**Preferences**
 
 
 **BIBLIOGRAFIA**  
