@@ -17,10 +17,10 @@ title: GB
 email: baudo81@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Computer science, Logics, Mathematics, Lifestyle.
-#baseurl: "/infoman" # the subpath of your site, e.g. /blog
-#url: "https://baudo2048.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "/"
-url: "http://localhost:4000"
+baseurl: "/infoman" # the subpath of your site, e.g. /blog
+url: "https://baudo2048.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+#baseurl: "/"
+#url: "http://localhost:4000"
 twitter_username: todo
 github_username:  baudo2048
 
