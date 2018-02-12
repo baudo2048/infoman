@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post2
 title:  "Eclipse Plugin Development"
 date:   2018-02-06 08:56:00 +0100
 categories: devops micro-operation-development
