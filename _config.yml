@@ -13,14 +13,14 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: GB
+title: Giuseppe Baudo
 email: baudo81@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Computer science, Logics, Mathematics, Lifestyle.
-#baseurl: "/infoman" # the subpath of your site, e.g. /blog
+  Pedagogia, Antropologia, Psicologia, Pedagogia Speciale.
+#baseurl: "/fit" # the subpath of your site, e.g. /blog
 #url: "https://baudo2048.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-#baseurl: "/"
-#url: "http://localhost:4000"
+baseurl: "/"
+url: "http://localhost:4000"
 twitter_username: todo
 github_username:  baudo2048
 

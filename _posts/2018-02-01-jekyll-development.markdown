@@ -4,6 +4,14 @@ title:  "Jekyll Development"
 date:   2018-02-01 00:00:00 +0100
 categories: documentation blog
 ---
+**Jekyll Philosophy**  
+If you embrace jekyll you need to embrace its Philosophy. For a general
+framework see more with Ruby programming language.
+
+But do not be afraid to be wrong, get into and start typing. With jekyll
+you will learn best practices of html/css/js/content programming. With jekyll
+you will learn how to customize every aspect of your web page. Just start
+installing it.
 
 **How to comments?**
 
@@ -77,6 +85,9 @@ print_hi('Tom')
 {% endhighlight %}
 
 Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+
+**How to change syntax highlighting rules?**  
+
 
 [jekyll-docs]: https://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll

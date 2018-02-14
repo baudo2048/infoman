@@ -33,3 +33,8 @@ Aggiungere a DevOps: Puppet labs e Chef
 Aggiungere all'architettura db e sicurezza.
 
 Aggiungere post commento alla canzone Ulisse
+
+Aggiungere e installare python
+
+Aggiungere TIM port forwarding
+https://assistenzatecnica.tim.it/at/portals/assistenzatecnica.portal?_nfpb=true&_pageLabel=InternetBook&radice=consumer_root&nodeId=/AT_REPOSITORY/600024

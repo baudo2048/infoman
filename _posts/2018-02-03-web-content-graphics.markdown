@@ -32,3 +32,8 @@ semplice e buono.
 
 }
 {% endhighlight %}
+
+**Audio files (octopod)**  
+
+**Fonts**
+https://fonts.google.com/
