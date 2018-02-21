@@ -1,0 +1,13 @@
+<script>
+$(document).ready(function(){
+  localConnection = new RTCPeerConnection();
+
+  sendChannel = localConnection.createDataChannel('sendChannel');
+  sendChannel.onopen = handler;
+  sendChannel.opclose = handler;
+
+  remoteConnection = new RTCPeerConnection();
+
+  remoteConnection.ondatachannel = receiveHandler;
+});
+</script>

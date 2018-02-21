@@ -1,0 +1,44 @@
+<ul class="custom-post-list">
+
+</ul>
+
+<script>
+(
+  function($){
+    console.log('custom-post-list componenet activated ');
+
+    // DEPENDENCIES
+    var c1 = $('.custom-post-list');
+    var dep1 = $('.search-box');
+
+    // UI CONSTRAINT
+    // WHEN THIS COMPONENT SHOULD WORK
+
+    // BUSINESS LOGICS ADDED TO DOM
+    $(dep1).keyup(function(){
+
+        var baseUri = 'https://api.mlab.com/api/1',
+            apiKey = 'sRlJ7RW1HNf0iR7-RDx5TyurrVhjCA7c',
+            db_name = 'baudo2048';
+
+        $(c1).show();  // Qualcuno potrebbe nascondere il componente.
+
+        $.ajax( {
+            url: baseUri + "/databases/"+db_name+"/collections/events?q={name: '"+ $(dep1).val() +"'}&apiKey="+apiKey,
+            type: "GET",
+            contentType: "application/json",
+            success: function(data, textStatus, jqXHR ){
+              console.log('custom-post-list success' + JSON.stringify(data));
+
+              $('.custom-post-list').html('');
+              data.forEach(function(el){
+                $('.custom-post-list').append('<li>'+el.name+'</li>');
+              });
+            }
+
+          } );
+
+    });
+
+}(jQuery));
+</script>

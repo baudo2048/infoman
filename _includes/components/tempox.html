@@ -1,0 +1,29 @@
+<h1 class="hello-tempo"></h1>
+
+<style>
+/**
+  Diventano dolori per gestire cose che si spostano
+
+  Qui preferirei utilizzare delle classi css already generated
+*/
+
+</style>
+
+<script>
+let obj = {
+    value: 1
+};
+
+Rx.Observable.fromObserving = (obj) => {
+    return Rx.Observable.create((observer) => {
+        var handler = (changes) => {
+            changes.forEach((x) => observer.onNext(x));
+            observer.onCompleted();
+        };
+
+        Object.observe(obj, handler);
+
+        return () => Object.unobserve(obj, handler);
+    });
+}
+</script>

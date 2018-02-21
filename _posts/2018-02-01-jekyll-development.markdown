@@ -13,8 +13,10 @@ you will learn best practices of html/css/js/content programming. With jekyll
 you will learn how to customize every aspect of your web page. Just start
 installing it.
 
-**How to comments?**
+[Faster Jekyll Website][faster-jekyll]
 
+**How to comments?**
+[ / / ] : # (This may be the most platform independent comment)
 
 **Usefule commands**
 {% highlight bash %}
@@ -89,6 +91,13 @@ Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most ou
 **How to change syntax highlighting rules?**  
 
 
+**How to add javascript capabilities**  
+![jekyll-coffeescript]({{"/assets/img/jekyll-coffeescript.png"|absolute_url}})
+
+
+
+
 [jekyll-docs]: https://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll
 [jekyll-talk]: https://talk.jekyllrb.com/
+[faster-jekyll]: https://wiredcraft.com/blog/make-jekyll-fast/

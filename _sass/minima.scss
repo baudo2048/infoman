@@ -3,21 +3,23 @@
 // Define defaults for each variable.
 
 $base-font-family: "Bevan", Nanum Myeongjo, Raleway, Helvetica, Arial !default;
-$base-font-size:   18px !default;
-$base-font-weight: 400 !default;
+$base-font-size:   30px !default;
+$base-font-weight: 50 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
 $base-line-height: 1.5 !default;
 
 $spacing-unit:     30px !default;
 
-$text-color:       #ffffff !default;
-$background-color: #000000 !default;
-$brand-color:      #ffffff !default;
+$text-color:       #000000 !default;
+$background-color: #ffffff !default; //#252525 !default; //BEL COLORE TURCHESE PER RAGAZZINI: #3bffff !default;
+$brand-color:      #000000 !default;
 
 $grey-color:       #828282 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
 $grey-color-dark:  darken($grey-color, 25%) !default;
 $grey-color-chiaro: #c9ff00 !default;
+
+$grey-color-turchese: #3bffff !default;
 
 $table-text-align: left !default;
 

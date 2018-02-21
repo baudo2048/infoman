@@ -9,7 +9,9 @@ Eclipse
 
 **Come si inseriscono i commenti?**
 
+
 **Come si usano le virgolette?**
+
 
 **Read/Write text files**  
 {% highlight ruby %}

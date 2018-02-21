@@ -16,11 +16,14 @@
   @import url('https://fonts.googleapis.com/css?family=Bevan');
   </style>
 
+  <script type="text/javascript" src="/assets/js/webrtc/adapter.js"></script>
   <script type="text/javascript" async
     src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
   </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="{{ '/assets/js/jquery-ui/jquery-ui.js' | relative_url }}"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/5.5.6/Rx.js"></script> -->
 
-  <script src="http://cdn.peerjs.com/0.3/peer.min.js"></script>
-
-  <script src="/assets/js/peerClientHeroku.js"></script>
+  <script src="{{ '/assets/js/model.js' | relative_url }}"></script>
+  <script src="{{ '/assets/js/services.js' | relative_url }}"></script>
 </head>

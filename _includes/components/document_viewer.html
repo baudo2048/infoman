@@ -1,0 +1,16 @@
+<div class="document-viewer">
+
+</div>
+
+<script>
+$('.document-viewer').hide();
+(function($){
+  document.addEventListener('newDoc', function(e){
+    model.getCurrDoc().forEach(function(i,el){      
+      $('.document-viewer').append(el);
+    });
+  });
+}(jQuery));
+
+
+</script>

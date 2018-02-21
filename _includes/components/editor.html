@@ -1,0 +1,42 @@
+<div class="custom-textarea-box">
+  <span class="textarea-menu confirm-item">confirm</span>
+  <textarea class="custom-textarea"></textarea>
+</div>
+
+<style>
+.custom-textarea {
+  width: 100%;
+  background-color: inherit; //ffffff //bombola servono costanti ma ci sono!!!!  $background-color
+  border-color: blue;
+  border-width: thin;
+  border-style: solid;
+
+  font-size: 24px;
+  color:blue;
+}
+
+.textarea-menu {
+  font-size: 10px;
+  cursor: pointer;
+}
+</style>
+
+<!-- PROBLEMINO - CI VUOLE DYNAMIC CSS -->
+
+<script>
+(function($){
+  var name = '.custom-textarea';
+  $(name).css('height',window.innerHeight * 0.65);
+
+}(jQuery));
+
+$(document).ready(function(){
+  $('.custom-textarea-box').hide();
+
+  $('.confirm-item').click(function(){
+    console.log('confirm-item clicked');
+    $('.custom-textarea-box').fadeOut();
+    model.addDoc($('.custom-textarea').val());
+  });
+});
+</script>

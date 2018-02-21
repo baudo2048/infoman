@@ -35,5 +35,9 @@ semplice e buono.
 
 **Audio files (octopod)**  
 
-**Fonts**
-https://fonts.google.com/
+**Fonts**  
+To use custom fonts you need:  
+- [google-fonts][google-fonts]
+
+
+[google-fonts]: https://fonts.google.com/

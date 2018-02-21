@@ -1,0 +1,34 @@
+<input
+  class="search-box"
+  name="search"
+  type="text" />
+  
+<script>
+(function($){
+  $.fn.search_box = function() {
+    this.keyup(function(eventObject){     // PROBLEM - POLYMORPHISM
+      var s = eventObject.target.value;
+      // Andiamo sul semplice. Eliminiamo tutte le li che non contengono nel testo del tag a la parola cercata.
+      var k = eventObject.target.value;
+      var l = $('.post-link').each(function(index, element){ //ATTENZIONE DIPENDENZA AD ALTRE ZONE DEL DOM
+        if (!$(element).html().toLowerCase().includes(k.toLowerCase())){
+          //hide
+          $(element).parent().parent().hide();
+        } else {
+          $(element).parent().parent().show();
+        }
+      });
+
+
+    });
+
+    return this;
+  };
+}(jQuery));
+
+// CONFIGURATION
+$(document).ready(function(){
+    $('.search-box').search_box();
+    $('.search-box').focus();
+});
+</script>

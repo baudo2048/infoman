@@ -1,0 +1,63 @@
+<!-- Attenzione ci sono dipendenze ad altro HTML e altro JS -->
+
+<span class="menu-item home-item">Home</span>
+<span class="menu-item about-item">About</span>
+<span class="menu-item">Restart</span>
+<span class="menu-item toggle-document-item">Document(0)</span>
+<span class="menu-item save-item">Save</span>
+<span class="menu-item save-item">+Image</span>
+<span class="menu-item freccia-item">+Freccia</span>
+<span class="menu-item text-item">+Text</span>
+
+<script>
+$(document).ready(function(){
+	document.addEventListener('newDoc', function(e){
+		$('.toggle-document-item').html('Document(' + model.getCurrDocLen() + ')');
+	});
+});
+</script>
+
+<script>
+$(document).ready(function(){
+	$('.about-item').click(function(eventObject){
+		console.log('about-item clicked');
+		// qui ci essere problema di redirect!!!
+	});
+
+	$('.toggle-document-item').click(function(){
+		console.log('toggle-document-item clicked');
+	});
+
+	$('.save-item').click(function(){
+		console.log('save-item clicked');
+
+		// devo salvare l'article html e css
+		// save html with computed css
+		var article = $('article').html();
+		console.log(JSON.stringify(article));
+
+		// prima di salvare verifico se esiste già
+		save({name: $('.search-box').val(), article: JSON.stringify(article)},'articles');
+	});
+
+	$('.freccia-item').click(function(){
+		// SETTO SOME css
+
+		// CLICK Restart
+
+		// CLICK END
+	});
+
+	$('.text-item').click(function(){
+		console.log('text-item clicked');
+		$('.custom-textarea-box').show();
+		$('.custom-textarea-box').focus();
+	});
+
+	$('.home-item').click(function(){
+		console.log('home-item clicked');
+		$('.home-content-manager > *').hide();
+	});
+
+});
+</script>

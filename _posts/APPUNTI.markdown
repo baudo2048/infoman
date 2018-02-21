@@ -37,4 +37,17 @@ Aggiungere post commento alla canzone Ulisse
 Aggiungere e installare python
 
 Aggiungere TIM port forwarding
+
+Aggiungere un board per le note musicali e per il latex, pensa in piccolo da
+lontano (ragazzi medie in su!!! vedi geogebra)
+
+
 https://assistenzatecnica.tim.it/at/portals/assistenzatecnica.portal?_nfpb=true&_pageLabel=InternetBook&radice=consumer_root&nodeId=/AT_REPOSITORY/600024
+
+
+CON QUESTO STRUMENTO VOGLIO RIUSCIRE A CAPIRE CHE COSA HO STUDIATO, DOVE
+SONO ARRIVATO, CHE COSA DEVO STUDIARE, ETC.
+
+
+WEB DESIGN - TODO
+Aggiungere effetto AS 400 SI TITOLI DEI LINKS

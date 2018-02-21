@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<div class="custom-editor">
+<textarea class="custom-textarea"></textarea>
+</div>
+
+<style>
+.custom-textarea {
+  width: 100%;
+  background-color: inherit; //ffffff //bombola servono costanti ma ci sono!!!!  $background-color
+  border-color: yellow;
+  border-width: thin;
+  border-style: solid;
+}
+</style>
+
+<!-- PROBLEMINO - CI VUOLE DYNAMIC CSS -->
+
+<script>
+(function($){
+  var name = '.custom-textarea';
+  $(name).css('height',window.innerHeight * 0.65);              // HOW TO MODIFY CSS ATTRIBUTE OF A CLASS????
+}(jQuery));             // SASS ELIMINATO
+
+$(document).ready(function(){
+  
+});
+</script>
