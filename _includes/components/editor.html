@@ -1,6 +1,13 @@
+<!-- PROBLEMINO DIFFICILE A TUTTI COME FACCIO A NESTARE
+UN COMPONENET DENTRO UN ALTRO???? -->
+
 <div class="custom-textarea-box">
-  <span class="textarea-menu confirm-item">confirm</span>
-  <textarea class="custom-textarea"></textarea>
+  <div class="editor-menu">
+    <span class="textarea-menu confirm-item"><i class="material-icons">done</i></span>
+    {% include components/code_dropdown.html %}
+    <span class="textarea-menu code-item"><i class="material-icons">code</i></span>
+  </div>
+  <textarea class="custom-textarea">Write whatever you want...</textarea>
 </div>
 
 <style>
@@ -18,6 +25,13 @@
 .textarea-menu {
   font-size: 10px;
   cursor: pointer;
+}
+
+.menu-item-selected.material-icons {
+  .background-color: yellow;
+  .border-style: solid;
+  .border-width: thin;
+  .border-color:red;
 }
 </style>
 
@@ -37,6 +51,17 @@ $(document).ready(function(){
     console.log('confirm-item clicked');
     $('.custom-textarea-box').fadeOut();
     model.addDoc($('.custom-textarea').val());
+  });
+
+  $('.textarea-menu.code-item').click(function(){
+    console.log('code-item clicked');
+  });
+
+  $('.textarea-menu').click(function(){
+    console.log('textarea-menu clicked');
+
+    str = $('.custom-textarea').val().replace(/(?:\r\n|\r|\n)/g, ' ');
+    $('.custom-textarea').val(str);
   });
 });
 </script>

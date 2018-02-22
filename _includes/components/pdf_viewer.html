@@ -1,0 +1,33 @@
+<iframe
+  class="custom-iframe"
+  src="{{'/assets/pdf/[Barendregt] Lambda calculi with types.pdf' | relative_url}}"
+  type="application/pdf">
+</iframe>
+
+<style>
+/** QUESTE VALGONO COME !IMPORTANT */
+.custom-iframe {
+  diplay: block;
+  position: fixed;
+  top: 15%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 400px;
+  width: 100%;
+}
+</style>
+
+<script>
+$('.custom-iframe').hide();
+
+$('.custom-iframe').css('width', model.getWindowWidth()); console.log('model.getWindowWidth = ' + model.getWindowWidth());
+$('.custom-iframe').css('height', model.getWindowHeight()*0.4); console.log('windowHeight: ' +model.getWindowHeight() );
+
+
+document.addEventListener('screenSizeChanged',function(){
+  $('.custom-iframe').css('width', model.getWindowWidth());
+  $('.custom-iframe').css('height', model.getWindowHeight());
+});
+
+</script>

@@ -1,18 +1,52 @@
-<ul class="custom-post-list">
+<div class="post-list-component">
+  <!-- <h5 class="post-list-title">Titolo</h5>
+  <h6 class="post-list-subtitle">sottotitolo</h6>
+  <p class="post-list-descr">
+19 gen 2018 - descr: Descriptive Statistics. Weighted frequency and contingency tables of categorical variables and of the comparison of the mean value of a numerical variable by the levels of a factor, and methods to produce xtable objects of the tables and to plot them. There are also functions to facilitate the character ...
+  </p>
+  <br />
 
-</ul>
+  <h5 class="post-list-title">Titolo</h5>
+  <h6 class="post-list-subtitle">sottotitolo</h6>
+  <p class="post-list-descr">descrizione</p>
+  <br />
 
+  <h5 class="post-list-title">Titolo un pò più lungo con accenti</h5>
+  <h6 class="post-list-subtitle">sottotitolo</h6>
+  <p class="post-list-descr">descrizione</p> -->
+</div>
+
+<style>
+.post-list-title {
+  margin: 0;
+  padding: 0;
+  color: #1a0dab;
+  cursor: pointer;
+}
+
+.post-list-subtitle {
+  margin: 0;
+  padding: 0;
+  color: #006621;
+  font-size: small;
+}
+
+.post-list-descr {
+  margin:0;
+  padding: 0;
+  color:#545454;
+  font-size: small;
+}
+
+</style>
 <script>
 (
   function($){
-    console.log('custom-post-list componenet activated ');
+    console.log('post-list-component componenet activated ');
 
     // DEPENDENCIES
-    var c1 = $('.custom-post-list');
+    var c1 = $('.post-list-component');
     var dep1 = $('.search-box');
-
-    // UI CONSTRAINT
-    // WHEN THIS COMPONENT SHOULD WORK
 
     // BUSINESS LOGICS ADDED TO DOM
     $(dep1).keyup(function(){
@@ -21,10 +55,13 @@
             apiKey = 'sRlJ7RW1HNf0iR7-RDx5TyurrVhjCA7c',
             db_name = 'baudo2048';
 
+
+        $('.home-content-manager > *').hide();
         $(c1).show();  // Qualcuno potrebbe nascondere il componente.
+        $(c1).html('');
 
         $.ajax( {
-            url: baseUri + "/databases/"+db_name+"/collections/events?q={name: '"+ $(dep1).val() +"'}&apiKey="+apiKey,
+            url: baseUri + "/databases/"+db_name+"/collections/articles?q={title: '"+ $(dep1).val() +"'}&apiKey="+apiKey,
             type: "GET",
             contentType: "application/json",
             success: function(data, textStatus, jqXHR ){
@@ -32,11 +69,23 @@
 
               $('.custom-post-list').html('');
               data.forEach(function(el){
-                $('.custom-post-list').append('<li>'+el.name+'</li>');
+                $('.post-list-component').append('<h5 class="post-list-title">'+el.title+'</h5>');
+                $('.post-list-component').append('<h6 class="post-list-subtitle">'+el.subtitle+'</h6>');
+                $('.post-list-component').append('<p class="post-list-descr">'+el.description+'</p>');
+                $('.post-list-component').append('<br/>');
               });
             }
 
           } );
+
+          //dopo che il componenete è stato attaccato attacco click listener
+
+          $(document).ready(function(){
+              $('.post-list-title').click(function(){
+                // RECUPERO I DATI E CHE CAZZO FACCIO??? MORE MODEL???
+              });
+          });
+
 
     });
 

@@ -1,0 +1,66 @@
+<div class="add-document-component">
+<h5>Create new document</h5>
+<input
+  class="new-doc-title"
+  type="text">
+
+<input
+  class="new-doc-subtitle"
+  type="text">
+
+<textarea
+  class="new-doc-descr">
+</textarea>
+<span class="add-document-confirm-item"><i class="material-icons">done</i></span>
+</div>
+<style>
+.add-document-component{
+  display: block;
+  position: fixed;
+  top: 40%;
+  margin: auto;
+  left:0;
+  right: 0;
+  width: 400px;
+}
+
+
+.new-doc-title {
+  display: block;
+}
+
+.new-doc-subtitle {
+  display: block;
+}
+
+.new-doc-descr{
+  display: block;
+}
+
+.add-document-confirm-item{
+  cursor: pointer;
+}
+
+</style>
+
+<script>
+(function(){
+  var th = '.add-document-component';
+
+  $(th).hide();
+
+  $(document).ready(function(){
+    $('.add-document-confirm-item').click(function(){
+      console.log('add-document-confirm-item clicked');
+      var docToStore = {
+        title: $('.new-doc-title').val(),
+        subtitle: $('.new-doc-subtitle').val(),
+        description: $('.new-doc-descr').val(),
+        content: ''
+      }; // QUI MI FERMO PERCHE CI VUOLE LA SINTASSI OBJ STYLE
+      save(docToStore, 'articles');
+    });
+  });
+}());
+
+</script>

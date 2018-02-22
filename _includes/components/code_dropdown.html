@@ -1,0 +1,39 @@
+<div class="code-dropdown">
+  <!-- <p>Choose a language.</p> -->
+  <select class="code-dropdown-select">
+    <optgroup>
+      <option>Text</option>
+      <option>Latex</option>
+      <option>JavaScript</option>
+    </optgroup>
+  <select>
+</div>
+
+<style>
+.code-dropdown{
+  display: inline;
+  /* position: fixed;
+  top: 40%;
+  margin: auto;
+  left:0;
+  right: 0;
+  width: 200px; */
+}
+</style>
+
+<script>
+
+(function(){
+  var th = '.code-dropdown';
+  $(th).hide();
+
+  $(document).ready(function(){
+    $('.code-dropdown').on('change', function(){
+      console.log('code-dropdown changed');
+      $('.code-dropdown').fadeOut();
+    });
+  });
+}());
+
+
+</script>

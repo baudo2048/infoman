@@ -1,13 +1,30 @@
 <!-- Attenzione ci sono dipendenze ad altro HTML e altro JS -->
+<div class="menu-component">
+	<span class="menu-caption"><i class="material-icons">apps</i></span>
+	<span class="menu-item home-item"><i class="material-icons">home</i></span>
+	<span class="menu-item add-item"><i class="material-icons">add</i></span>
+	<span class="menu-item about-item"><i class="material-icons">info</i></span>
+	<span class="menu-item"><i class="material-icons">restore</i></span>
+	<span class="menu-item toggle-document-item"><i class="material-icons">book</i></span>
+	<span class="menu-item save-item"><i class="material-icons">save</i></span>
+	<span class="menu-item add-photo-item"><i class="material-icons">add_a_photo</i></span>
+	<span class="menu-item freccia-item"><i class="material-icons">call_made</i></span>
+	<span class="menu-item text-item"><i class="material-icons">note_add</i></span>
+	<span class="menu-item pdf-item"><i class="material-icons">picture_as_pdf</i></span>
+	<span class="menu-item settings-item"><i class="material-icons">build</i></span>
+	<span class="menu-item group-item"><i class="material-icons">group</i></span>
+</div>
 
-<span class="menu-item home-item">Home</span>
-<span class="menu-item about-item">About</span>
-<span class="menu-item">Restart</span>
-<span class="menu-item toggle-document-item">Document(0)</span>
-<span class="menu-item save-item">Save</span>
-<span class="menu-item save-item">+Image</span>
-<span class="menu-item freccia-item">+Freccia</span>
-<span class="menu-item text-item">+Text</span>
+
+<script>
+$(document).ready(function(){
+	//$('.menu-caption').hide();
+
+	document.addEventListener('screenSizeChanged', ()=>{
+		console.log('menu-component screenSizeChanged listener');
+	})
+});
+</script>
 
 <script>
 $(document).ready(function(){
@@ -50,6 +67,8 @@ $(document).ready(function(){
 
 	$('.text-item').click(function(){
 		console.log('text-item clicked');
+		$('.home-content-manager > *').hide(); // hide all other - BAD PRACTICE
+		$('.history-panel-component').show(); // PORKAROUND
 		$('.custom-textarea-box').show();
 		$('.custom-textarea-box').focus();
 	});
@@ -57,6 +76,18 @@ $(document).ready(function(){
 	$('.home-item').click(function(){
 		console.log('home-item clicked');
 		$('.home-content-manager > *').hide();
+	});
+
+	$('.pdf-item').click( () => {
+		console.log('pdf-item clicked');
+		$('.home-content-manager > *').hide(); // hide all other - BAD PRACTICE
+		$('.custom-iframe').show();
+	});
+
+	$('.menu-item.add-item').click( () => {
+		console.log('add-item clicked');
+		$('.home-content-manager > *').hide(); // hide all other - BAD PRACTICE
+		$('.add-document-component').show();
 	});
 
 });

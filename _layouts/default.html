@@ -13,11 +13,11 @@
       </div>
     </main>
 
-    {% include footer.html %}
-
-    {% include components/time_manager.html %}
-    {% include components/testModel.html %}
-    {% include components/document_viewer.html %}
-
+    <div class="home-content-manager">
+      {% include components/time_manager.html %}
+      {% include components/document_viewer.html %}
+      {% include components/pdf_viewer.html %}
+      {% include components/add_document.html %}
+    </div>
   </body>
 </html>

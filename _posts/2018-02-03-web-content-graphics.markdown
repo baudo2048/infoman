@@ -4,6 +4,9 @@ title:  "Web Content Graphics"
 date:   2018-01-02 00:00:00 +0100
 categories:
 ---
+**Icons**
+https://material.io/icons/
+
 **Web Content Graphics**
 It is customary to include the content of this page under the category of Web
 Design. I think it is not exactly correct to continue using the `design` term
