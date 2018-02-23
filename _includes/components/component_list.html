@@ -1,0 +1,54 @@
+<div class="component-list-component"></div>
+
+<style>
+.post-list-title {
+  margin: 0;
+  padding: 0;
+  color: #1a0dab;
+  cursor: pointer;
+}
+.post-list-subtitle {
+  margin: 0;
+  padding: 0;
+  color: #006621;
+  font-size: small;
+}
+.post-list-descr {
+  margin:0;
+  padding: 0;
+  color:#545454;
+  font-size: small;
+}
+</style>
+
+<script>
+(function(){
+    console.log('component-list-component componenet activated ');
+
+    // DEPENDENCIES
+    var th = $('.component-list-component');
+    var dep1 = $('.search-box');
+
+    $(document).ready(function(components){
+      $(dep1).keyup(function(){
+        $(th).show();
+        $('.component-list-component').html('');
+        var components = open({title: $(dep1).val()},'components', function(data, status, xhr){
+        data.forEach(function(el){
+          $('.component-list-component').append('<h5 class="post-list-title">'+el.title+'</h5>');
+          $('.component-list-component').append('<h6 class="post-list-subtitle">'+el.subtitle+'</h6>');
+          $('.component-list-component').append('<p class="post-list-descr">'+el.description+'</p>');
+          $('.component-list-component').append('<br/>');
+        });
+        $('.post-list-title').click(function(){
+          $('.home-content-manager > *').hide();
+          $('.add-component-component').show();
+        });
+      });
+    });
+  });
+
+
+
+}());
+</script>

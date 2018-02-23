@@ -1,0 +1,28 @@
+<div class="component-manager">
+
+</div>
+
+<style>
+.component-manager{
+  display: block;
+  position: fixed;
+  top: 40%;
+  left: 0;
+  margin: auto;
+  width: 100px;
+}
+</style>
+
+<script>
+(function(){
+  var th = '.component-manager';
+  var components = open({},'components', function(data, status, xhr){
+    console.log('data is' + data);
+    $(document).ready(function(components){
+      data.forEach(function(e){
+        $('.component-manager').append(e.html + '<style>'+e.css+'<\/style><script>'+e.js+'<\/script>');
+      });
+    });
+  });
+}());
+</script>

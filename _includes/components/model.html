@@ -4,12 +4,14 @@ var M = (function(){
   var clock = new Event('clock');
   var newDoc = new Event('newDoc');
   var screenSizeChanged = new Event('screenSizeChanged');
+  var clientWidthChanged = new Event('clientWidthChanged');
 
   function M(){
     this.time=0;
     document.dispatchEvent(clock);
 
     this.currDoc = [];
+    this.clientWidth = 0;
     this.screenWidth = 100;//document.body.clientWidth;
     this.screenHeight = 100;//document.body.clientHeight;
     this.windowWidth = window.innerWidth;
@@ -92,6 +94,15 @@ var M = (function(){
     document.dispatchEvent(screenSizeChanged);
   }
 
+  M.prototype.getClientWidth = ()=>{
+    return this.clientWidth;
+  };
+
+  M.prototype.setClientWidth = (w)=>{
+    this.clientWidth = w;
+    document.dispatchEvent(clientWidthChanged);
+  };
+
 
 
   M.prototype.onResize = () =>
@@ -111,4 +122,9 @@ var M = (function(){
 
 <script>
 var model = new M();
+
+$(document).ready(()=>{
+    model.setClientWidth(document.body.clientWidth);
+    console.log('model.clientWidth() = ' + model.clientWidth);
+});
 </script>

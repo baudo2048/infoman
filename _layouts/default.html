@@ -10,14 +10,17 @@
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
         {{ content }}
+        {% include components/home_content_manager.html %}
       </div>
     </main>
 
-    <div class="home-content-manager">
-      {% include components/time_manager.html %}
-      {% include components/document_viewer.html %}
-      {% include components/pdf_viewer.html %}
-      {% include components/add_document.html %}
+
+    {% include components/home_content_manager_template.html %}
+
+
+
+    <div class="group-component-visibles">
+      <!-- Esempio dx panel, history panel -->
     </div>
   </body>
 </html>

@@ -1,6 +1,11 @@
 <script>
-var AppSettings = {
-    this.appName: 'App Name',
-    this.baseUrl: 'http:/localhost:4000'
-  };
+var AppSettings = (()=>{
+  function AppSettings(){
+    this.apiKey = 'sRlJ7RW1HNf0iR7-RDx5TyurrVhjCA7c';
+    this.base_db_Uri = 'https://api.mlab.com/api/1';
+    this.db_name = 'baudo2048';
+  }
+})();
+
+//var appSettings = new AppSettings();
 </script>

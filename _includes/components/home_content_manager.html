@@ -1,11 +1,22 @@
+<div class="home-content-manager">
+  {% include components/time_manager.html %}
+  {% include components/document_viewer.html %}
+  {% include components/pdf_viewer.html %}
+  {% include components/add_document.html %}
+  {% include components/add_component.html %}
+  {% include components/console.html %}
+  {% include components/item_chooser.html %}
+  {% include components/component_list.html %}
+</div>
+
 <script>
 var HomeContentManager = (function(){
-  HomeContentManager(){
+  var change = new Event('change');
 
-  }
-
-  HomeContentManager.prototype.hideAll()
-  var th = '.home_content_manager';
+  // HomeContentManager.prototype.hideAll = function(){
+  //
+  // }
+  var th = '.home-content-manager';
 
   $(document).ready(function(){
 

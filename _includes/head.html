@@ -26,9 +26,10 @@
   <script src="{{ '/assets/js/jquery-ui/jquery-ui.js' | relative_url }}"></script>
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/5.5.6/Rx.js"></script> -->
 
-  <script src="{{ '/assets/js/app_settings.js' | relative_url }}"></script>
+  <!-- <script src="{{ '/assets/js/app_settings.js' | relative_url }}"></script> -->
+  {% include components/app_settings.html %}
   <!-- <script src="{{ '/assets/js/model.js' | relative_url }}"></script> -->
   {% include components/model.html %}
   <!-- <script src="{{ '/assets/js/services.js' | relative_url }}"></script> -->
-  {% include components/services.html %}
+  {% include components/crud.html %}
 </head>

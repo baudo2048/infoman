@@ -1,18 +1,17 @@
+<!--
+  DEPENDENCIES:
+  - crud services
+
+-->
+
 <div class="add-document-component">
-<h5>Create new document</h5>
-<input
-  class="new-doc-title"
-  type="text">
-
-<input
-  class="new-doc-subtitle"
-  type="text">
-
-<textarea
-  class="new-doc-descr">
-</textarea>
-<span class="add-document-confirm-item"><i class="material-icons">done</i></span>
+  <h5>Create new document</h5>
+  <input class="new-doc-title" type="text">
+  <input class="new-doc-subtitle" type="text">
+  <textarea class="new-doc-descr"></textarea>
+  <span class="add-document-confirm-item"><i class="material-icons">done</i></span>
 </div>
+
 <style>
 .add-document-component{
   display: block;
@@ -40,7 +39,6 @@
 .add-document-confirm-item{
   cursor: pointer;
 }
-
 </style>
 
 <script>
@@ -56,7 +54,7 @@
         title: $('.new-doc-title').val(),
         subtitle: $('.new-doc-subtitle').val(),
         description: $('.new-doc-descr').val(),
-        content: ''
+        properties: {es:'1'}
       }; // QUI MI FERMO PERCHE CI VUOLE LA SINTASSI OBJ STYLE
       save(docToStore, 'articles');
     });

@@ -1,0 +1,77 @@
+<!--
+  DEPENDENCIES
+  - crud services
+-->
+
+<div class="add-component-component">
+  <h5>Create new Component</h5>
+  <input class="new-comp-name" type="text">
+  <textarea class="add-component-textarea new-comp-description"></textarea>
+  <textarea class="add-component-textarea new-comp-html"></textarea>
+  <textarea class="add-component-textarea new-comp-css"></textarea>
+  <textarea class="add-component-textarea new-comp-js"></textarea>
+  <i class="add-component-confirm-item material-icons">done</i>
+</div>
+
+
+
+<style>
+.add-component-component{
+  display: block;
+  position: relative;
+  top: 0%;
+  margin: auto;
+  left:0;
+  right: 0;
+  width: 800px;
+}
+
+.add-component-textarea {
+  width: 800px;
+  height: 600px;
+}
+
+.new-comp-html {
+  display: block;
+}
+
+.new-comp-css {
+  display: block;
+}
+
+.new-comp-js{
+  display: block;
+}
+
+.add-component-confirm-item{
+  cursor: pointer;
+}
+
+</style>
+
+<script>
+(function(){
+  var th = '.add-component-component';
+  var span = '.add-component-confirm-item';
+
+  $(th).hide();
+
+  $(document).ready(function(){
+    $(span).click(function(){
+      console.log(span + ' clicked');
+      var docToStore = {
+        name: $('.new-comp-name').val(),
+        title: $('.new-comp-name').val(),  //dipende da post-list-comp
+        description: $('.new-comp-description').val(),
+        html: $('.new-comp-html').val(),
+        css: $('.new-comp-css').val(),
+        js: $('.new-comp-js').val()
+      };
+      save(docToStore, 'components');
+
+      $(th).hide();
+    });
+  });
+}());
+
+</script>

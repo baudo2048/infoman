@@ -1,4 +1,5 @@
 <script>
+// LO INIZIALIZZO O PRENDO DA SETTING OPPURE PRENDO DEFAULT
 function save(doc, coll){
   console.log('save services called');
     var baseUri = 'https://api.mlab.com/api/1',
@@ -11,7 +12,8 @@ function save(doc, coll){
           contentType: "application/json" } );
 }
 
-function open(query, coll){
+function open(query, coll, callback){
+  console.log('open services called');
   var baseUri = 'https://api.mlab.com/api/1',
         apiKey = 'sRlJ7RW1HNf0iR7-RDx5TyurrVhjCA7c',
         db_name = 'baudo2048';
@@ -19,6 +21,6 @@ function open(query, coll){
         url: baseUri + "/databases/"+db_name+"/collections/"+coll+"?q="+JSON.stringify(query)+"&apiKey="+apiKey,
         type: "GET",
         contentType: "application/json",
-        complete: callback } );
+        success: callback} );
 }
 </script>

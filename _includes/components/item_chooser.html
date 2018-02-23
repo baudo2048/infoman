@@ -1,0 +1,69 @@
+<div class="item-chooser-comp">
+  <div class="gallery item-chooser-new-doc">
+      <i class="material-icons">note_add</i>
+  </div>
+
+  <div class="gallery item-chooser-comp-component">
+      <i class="material-icons">code</i>
+  </div>
+
+</div>
+
+<style>
+.item-chooser-comp{
+  margin: auto;
+  left:0;
+  right: 0;
+  width: 800px;
+}
+
+
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+</style>
+
+<script>
+(function(){
+  var th = '.item-chooser-comp';
+  var comp =".item-chooser-comp-component";
+  var itemDoc = '.gallery.item-chooser-new-doc'
+  var dep = '.add-component-component';
+  var addDoc = '.add-document-component';
+
+  $(th).hide();
+
+  $(document).ready(function(){
+    $(comp).click(()=>{
+      console.log(comp + ' clicked');
+      $('.home-content-manager > *').hide();
+      $(dep).show();
+    });
+
+    $(itemDoc).click(()=>{
+      console.log(itemDoc + 'clicked');
+      $('.home-content-manager > *').hide();
+      $(addDoc).show();
+    });
+
+  });
+}());
+</script>
