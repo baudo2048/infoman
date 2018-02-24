@@ -1,10 +1,16 @@
-<iframe
+<!-- <iframe
   class="custom-iframe"
   src="{{'/assets/pdf/[Barendregt] Lambda calculi with types.pdf' | relative_url}}"
   type="application/pdf">
-</iframe>
+</iframe> -->
 
-<style>
+<embed
+  class="custom-iframe"
+  src="{{'/assets/pdf/[Barendregt] Lambda calculi with types.pdf' | relative_url}}#page=15"
+  type="application/pdf">
+</embed>
+
+<!-- <style>
 /** QUESTE VALGONO COME !IMPORTANT */
 .custom-iframe {
   diplay: block;
@@ -16,18 +22,19 @@
   height: 400px;
   width: 100%;
 }
-</style>
+</style> -->
 
 <script>
-$('.custom-iframe').hide();
+var testEmbed = document.getElementsByClassName('custom-iframe')[0];
+//$('.custom-iframe').hide();
 
-$('.custom-iframe').css('width', model.getWindowWidth()); console.log('model.getWindowWidth = ' + model.getWindowWidth());
-$('.custom-iframe').css('height', model.getWindowHeight()*0.4); console.log('windowHeight: ' +model.getWindowHeight() );
+//$('.custom-iframe').css('width', model.getWindowWidth()); console.log('model.getWindowWidth = ' + model.getWindowWidth());
+//$('.custom-iframe').css('height', model.getWindowHeight()*0.4); console.log('windowHeight: ' +model.getWindowHeight() );
 
 
 document.addEventListener('screenSizeChanged',function(){
-  $('.custom-iframe').css('width', model.getWindowWidth());
-  $('.custom-iframe').css('height', model.getWindowHeight());
+  //$('.custom-iframe').css('width', model.getWindowWidth());
+  //$('.custom-iframe').css('height', model.getWindowHeight());
 });
 
 </script>

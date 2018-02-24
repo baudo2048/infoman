@@ -1,5 +1,4 @@
 <div class="home-content-manager">
-  {% include components/time_manager.html %}
   {% include components/document_viewer.html %}
   {% include components/pdf_viewer.html %}
   {% include components/add_document.html %}
@@ -7,8 +6,23 @@
   {% include components/console.html %}
   {% include components/item_chooser.html %}
   {% include components/component_list.html %}
+  {% include archive/generic_editor.html %}
+  {% include archive/advertising.html %}
+  {% include archive/dallago.html %}
+  {% include components/editor_full.html %}
 </div>
+<style>
+.home-content-manager{
+  width: 100%;
+  height: 100%;
+}
 
+.home-content-manager > * {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+<style>
 <script>
 var HomeContentManager = (function(){
   var change = new Event('change');

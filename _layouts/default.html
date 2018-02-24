@@ -4,23 +4,63 @@
   {% include head.html %}
 
   <body>
+    <div class="horizontal-layout">
+      <header class="header-default-component" role="banner">
+          <div class="wrapper">{% include components/search_box.html %}</div>
+          <div class="wrapper">{% include components/menu.html %}</div>
+          {% include components/hr.html %}
+      </header>
 
-    {% include header.html %}
+      <main class="page-content-component" aria-label="Content">
+          {% include components/home_content_manager.html %}
+      </main>
 
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        {{ content }}
-        {% include components/home_content_manager.html %}
-      </div>
-    </main>
-
-
-    {% include components/home_content_manager_template.html %}
-
-
-
-    <div class="group-component-visibles">
-      <!-- Esempio dx panel, history panel -->
+      <footer class="footer-default-component">
+        
+      </footer>
     </div>
+
+    <style>
+    * {
+      padding:0;
+      margin:0;
+    }
+      .header-default-component{
+        background-color: green;
+      }
+      .page-content-component{
+        background-color: blue;
+      }
+      .footer-default-component{
+        background-color: grey;
+        bottom:0;
+        height:10px;
+      }
+    </style>
+
+    <script>
+      var HorizontalLayout = (function(){
+        function HorizontalLayout (){
+          this.headerHeight = $('.header-default-component').css('height').replace('px','');
+        }
+
+        HorizontalLayout.prototype.getHeaderHeight = function(){
+          return $('.header-default-component').css('height').replace('px','')-10;
+        };
+
+        HorizontalLayout.prototype.resize = function(that){
+          that.mainHeight = window.innerHeight-that.getHeaderHeight();
+          $('main').css('height',that.mainHeight);
+        };
+
+
+        return HorizontalLayout;
+      }());
+
+      var horizontalLayout = new HorizontalLayout();
+      window.addEventListener('resize', horizontalLayout.resize(horizontalLayout));
+
+    </script>
+
   </body>
 </html>

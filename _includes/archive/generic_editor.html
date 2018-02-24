@@ -1,0 +1,79 @@
+<!--
+  DEPENDENCIES
+  - crud services
+-->
+
+<div class="generic-editor-component">
+  <h6>Create new Component</h6>
+  <i class="generic-editor-confirm-item material-icons">done</i>
+  <hr></hr>
+  <input class="new-comp-name" type="text">
+  <textarea class="generic-editor-textarea new-comp-description"></textarea>
+  <textarea class="generic-editor-textarea new-comp-src"></textarea>
+</div>
+
+
+
+<style>
+.generic-editor-component{
+  display: block;
+  position: relative;
+  top: 0%;
+  margin: auto;
+  left:0;
+  right: 0;
+  width: 800px;
+}
+
+.generic-editor-textarea {
+  width: 800px;
+  height: 600px;
+}
+
+.new-comp-html {
+  display: block;
+}
+
+.new-comp-css {
+  display: block;
+}
+
+.new-comp-js{
+  display: block;
+}
+
+.generic-editor-confirm-item{
+  cursor: pointer;
+}
+
+.new-comp-description {
+  height: 150px;
+}
+
+</style>
+
+<script>
+(function(){
+  var th = '.generic-editor-component';
+  var span = '.generic-editor-confirm-item';
+
+  console.log(th + 'activated');
+  $(th).hide();
+
+  $(document).ready(function(){
+    $(span).click(function(){
+      console.log(span + ' clicked');
+      var docToStore = {
+        name: $('.new-comp-name').val(),
+        title: $('.new-comp-name').val(),  //campo che serve a post-list-comp
+        description: $('.new-comp-description').val(),
+        src: $('.new-comp-src').val(),
+      };
+      save(docToStore, 'components');
+
+      $(th).hide();
+    });
+  });
+}());
+
+</script>

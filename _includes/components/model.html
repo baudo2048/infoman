@@ -1,51 +1,56 @@
+<!-- This model depends on document and window. In other words it doesn't have
+any dependencies because those objects are available in every browser -->
+
 <script>
+'use strict';
+
 var M = (function(){
   //CUSTOM EVENTS EMITTER
-  var clock = new Event('clock');
+  var clockEv = new Event('clock');
   var newDoc = new Event('newDoc');
   var screenSizeChanged = new Event('screenSizeChanged');
   var clientWidthChanged = new Event('clientWidthChanged');
+  var clientHeightChanged = new Event('clientHeightChanged');
 
   function M(){
-    this.time=0;
-    document.dispatchEvent(clock);
+    this.clock=0;
+    document.dispatchEvent(clockEv);
 
     this.currDoc = [];
     this.clientWidth = 0;
+    this.clientHeight = 0;
     this.screenWidth = 100;//document.body.clientWidth;
     this.screenHeight = 100;//document.body.clientHeight;
     this.windowWidth = window.innerWidth;
     this.windowHeight = window.innerHeight;
 
     window.addEventListener('resize', this.onResize);
-
-
-
+    document.addEventListener('resize', this.onResize);
   }
 
-  M.prototype.setTime = (time) =>
+  M.prototype.setClock = function(clock)
   {
-    this.time = time;
-    document.dispatchEvent(clock);
+    this.clock = clock;
+    document.dispatchEvent(clockEv);
   };
 
-  M.prototype.getTime = () =>
+  M.prototype.getClock = function()
   {
-    return this.time;
+    return this.clock;
   };
 
-  M.prototype.addDoc = (doc) =>
+  M.prototype.addDoc = function(doc)
   {
     this.currDoc.push(doc);
     document.dispatchEvent(newDoc);
   }
 
-  M.prototype.getCurrDocLen = () =>
+  M.prototype.getCurrDocLen = function()
   {
     return this.currDoc.length;
   }
 
-  M.prototype.getCurrDoc = () =>
+  M.prototype.getCurrDoc = function ()
   {
     return this.currDoc;
   }
@@ -72,49 +77,71 @@ var M = (function(){
     document.dispatchEvent(screenSizeChanged);
   }
 
-  M.prototype.getWindowWidth = () =>
+  M.prototype.getWindowWidth = function ()
   {
     return this.windowWidth;
   }
 
-  M.prototype.setWindowWidth = (windowWidth) =>
+  M.prototype.setWindowWidth = function (windowWidth)
   {
     this.screenWidth = windowWidth;
     document.dispatchEvent(screenSizeChanged);
   }
 
-  M.prototype.getWindowHeight = () =>
+  M.prototype.getWindowHeight = function()
   {
     return this.windowHeight;
   }
 
-  M.prototype.setWindowHeight = (windowHeight) =>
+  M.prototype.setWindowHeight = function(windowHeight)
   {
     this.windowHeight = windowHeight;
     document.dispatchEvent(screenSizeChanged);
   }
 
-  M.prototype.getClientWidth = ()=>{
+  M.prototype.getClientWidth = function(){
     return this.clientWidth;
   };
 
-  M.prototype.setClientWidth = (w)=>{
+  M.prototype.setClientWidth = function(w){
     this.clientWidth = w;
     document.dispatchEvent(clientWidthChanged);
   };
 
+  M.prototype.getClientHeight = function(){
+    return this.clientHeight;   // SUPER STATICALLY TYPED ERROR - INTROVABILE
+  };
+
+  M.prototype.setClientHeight = function(h){
+    console.log('h is' + h);
+    this.clientHeight = h;
+    document.dispatchEvent(clientHeightChanged);
+  };
 
 
-  M.prototype.onResize = () =>
+
+  M.prototype.onResize = function()
   {
+    this.clientWidth = document.body.clientWidth;
+    this.clientHeight = document.body.clientHeight;
+
     this.screenWidth = document.body.clientWidth;
     this.screenHeight = document.body.clientHeight;
 
     this.windowWidth = window.innerWidth;
     this.windowHeight = window.innerHeight;
 
+
     document.dispatchEvent(screenSizeChanged);
   }
+
+  M.prototype.init = function(that){
+    console.log('init cocker');
+    setInterval(()=>{
+      that.setClock(that.getClock()+1);
+    },1000);
+  };
+
 
   return M;
 }());
@@ -122,9 +149,5 @@ var M = (function(){
 
 <script>
 var model = new M();
-
-$(document).ready(()=>{
-    model.setClientWidth(document.body.clientWidth);
-    console.log('model.clientWidth() = ' + model.clientWidth);
-});
+model.init(model);
 </script>

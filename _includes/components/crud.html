@@ -23,4 +23,14 @@ function open(query, coll, callback){
         contentType: "application/json",
         success: callback} );
 }
+
+function openHtml(url, options, callback){
+  console.log('openHtml services called');
+  return $.ajax({
+    url: 'http://www.cs.unibo.it/~dallago/OTT1718/primaparte.pdf',
+    type: 'GET',
+    contentType: 'application/html',
+    success: callback
+  });
+}
 </script>

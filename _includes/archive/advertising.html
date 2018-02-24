@@ -1,0 +1,51 @@
+<div class="advertising-component">
+  <div class="slide 1"><span>Hi There!<span></div>
+  <div class="slide 2">There are something</div>
+  <div class="slide 3">I would say to you</div>
+</div>
+
+
+
+<style>
+.advertising-component {
+  background-color: white;
+}
+.slide {
+  background-color: brown;
+  text-align: center;
+}
+
+</style>
+
+<script>
+//var app.components.advertising =      // CREARE NAMESPACES FOR COMPONENTS
+(function(){
+  var th = '.advertising-component';
+  var innerDiv = '.slide';
+
+  console.log(th + ' activated');
+
+  //$(th).hide();
+  //$(innerDiv).hide();
+
+  $(document).ready(function(){
+
+    var index = -1;    // <-- secondo me l'errore si verifica qui. ADESSO index la metto nel dom
+    document.addEventListener('clock',function(){
+      if(model.getClock()%2==0){
+        $(innerDiv).hide();
+        $(innerDiv + '.' + index++).show();
+      }
+    });
+    document.addEventListener('app.events.menu.itemClicked', function(){
+      // E QUI HO RISOLTO UN ALTRO PROBLEMA BECAUSE NON MI DEVO PREOCCUPARE
+      // DEL LAYOUT MANAGER DI FARE IL SUO LAVORO
+      index=-1;
+      $(th).show();
+      console.log('advertising inded changed '+index);
+
+    });
+
+  });
+}());
+</script>

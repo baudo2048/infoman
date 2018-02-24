@@ -1,0 +1,32 @@
+<div class="dallago-comp">
+
+</div>
+
+<style>
+.dallago-comp{
+  display: block;
+  position: fixed;
+  top: 40%;
+  left: 0;
+  margin: auto;
+  width: 100px;
+}
+</style>
+
+<script>
+(function(){
+  var th = '.dallago-comp';
+  var searchBox = '.search-box';
+
+  //$(th).hide();
+  console.log(th + ' activated');
+
+  $(document).ready(function(){
+    $(searchBox).keyup(function(){
+      // var res = openHtml(null,null,function(data, status, xhr){
+      //   console.log('data', data);
+      // });
+    });
+  });
+}());
+</script>

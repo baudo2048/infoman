@@ -48,6 +48,7 @@ div.desc {
   var itemDoc = '.gallery.item-chooser-new-doc'
   var dep = '.add-component-component';
   var addDoc = '.add-document-component';
+  var addDoc2 = '.generic-editor-component';
 
   $(th).hide();
 
@@ -61,7 +62,7 @@ div.desc {
     $(itemDoc).click(()=>{
       console.log(itemDoc + 'clicked');
       $('.home-content-manager > *').hide();
-      $(addDoc).show();
+      $(addDoc2).show();
     });
 
   });

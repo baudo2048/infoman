@@ -1,30 +1,28 @@
 <!-- Attenzione ci sono dipendenze ad altro HTML e altro JS -->
 <div class="menu-component">
-	<span class="menu-caption"><i class="material-icons">apps</i></span>
+	<!-- <span class="menu-caption"><i class="material-icons">apps</i></span> -->
 	<span class="menu-item home-item"><i class="material-icons">home</i></span>
 	<span class="menu-item add-item"><i class="material-icons">add</i></span>
-	<span class="menu-item about-item"><i class="material-icons">info</i></span>
-	<span class="menu-item"><i class="material-icons">restore</i></span>
-	<span class="menu-item toggle-document-item"><i class="material-icons">book</i></span>
-	<span class="menu-item save-item"><i class="material-icons">save</i></span>
-	<span class="menu-item add-photo-item"><i class="material-icons">add_a_photo</i></span>
+	<!-- <span class="menu-item about-item"><i class="material-icons">info</i></span> -->
+	<!-- <span class="menu-item"><i class="material-icons">restore</i></span> -->
+	<!-- <span class="menu-item toggle-document-item"><i class="material-icons">book</i></span> -->
+	<!-- <span class="menu-item save-item"><i class="material-icons">save</i></span> -->
+	<!-- <span class="menu-item add-photo-item"><i class="material-icons">add_a_photo</i></span> -->
 	<span class="menu-item freccia-item"><i class="material-icons">call_made</i></span>
 	<span class="menu-item text-item"><i class="material-icons">note_add</i></span>
 	<span class="menu-item pdf-item"><i class="material-icons">picture_as_pdf</i></span>
 	<span class="menu-item settings-item"><i class="material-icons">build</i></span>
 	<span class="menu-item group-item"><i class="material-icons">group</i></span>
+	<span class="menu-item test-item"><i class="material-icons">trending_up</i></span>
+	<span class="menu-item audiotrack-item"><i class="material-icons">audiotrack</i></span>
+	<span class="menu-item search-item"><i class="material-icons">search</i></span>
 </div>
 
-
-<script>
-$(document).ready(function(){
-	//$('.menu-caption').hide();
-
-	document.addEventListener('screenSizeChanged', ()=>{
-		console.log('menu-component screenSizeChanged listener');
-	})
-});
-</script>
+<style>
+.menu-component {
+	background-color: yellow;
+}
+</style>
 
 <script>
 $(document).ready(function(){
@@ -90,5 +88,31 @@ $(document).ready(function(){
 		$('.item-chooser-comp').show();
 	});
 
+	$('.menu-item.test-item').click( () => {
+		console.log('test-item clicked');
+		$('.home-content-manager > *').hide(); // hide all other - BAD PRACTICE
+		$('.editor-full').show();
+	});
+
+	$('.menu-item').click(function(){
+		//document.dispatchEvent(new Event('app.events.menu.itemClicked')); //IMPARARE A PASSARE OBJ A EVENT
+	});
+
+	$('.about-item').click(function(){
+		document.dispatchEvent(new Event('app.events.menu.itemClicked')); //IMPARARE A PASSARE OBJ A EVENT
+	});
+
+	$('.search-item').click(function(){
+		console.log('search-item clicked');
+		$('.search-box').toggleClass('hide');
+		$('.search-box').focus();
+		//document.dispatchEvent(new Event('app.events.menu.itemClicked')); //IMPARARE A PASSARE OBJ A EVENT
+	});
+
 });
+</script>
+
+<script>
+//INPUT CONNECTORS
+
 </script>

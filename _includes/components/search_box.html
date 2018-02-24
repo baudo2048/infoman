@@ -2,7 +2,19 @@
   class="search-box"
   name="search"
   type="text" />
-  
+
+<style>
+.search-box {
+  height: 30px;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 0px 0;
+  margin-top: 10px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; }
+</style>
 <script>
 (function($){
   $.fn.search_box = function() {
@@ -29,6 +41,6 @@
 // CONFIGURATION
 $(document).ready(function(){
     $('.search-box').search_box();
-    $('.search-box').focus();
+    $('.search-box').toggleClass('hide');
 });
 </script>
