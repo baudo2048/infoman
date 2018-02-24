@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Begin Jekyll SEO tag v2.4.0 -->
+<title>VBA Development | Giuseppe Baudo</title>
+<meta name="generator" content="Jekyll v3.7.2" />
+<meta property="og:title" content="VBA Development" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Excel VBA Folder Structure user interfaces commons - common functions implementing the business logic of our applicaiton format - helper subrouting handling excel sheets formatting operation1 - (oppure il nome dell’operation) operationN - ogni operation module conterrà tutte le function e subrouting utilizzate per automatizzare un determinato task." />
+<meta property="og:description" content="Excel VBA Folder Structure user interfaces commons - common functions implementing the business logic of our applicaiton format - helper subrouting handling excel sheets formatting operation1 - (oppure il nome dell’operation) operationN - ogni operation module conterrà tutte le function e subrouting utilizzate per automatizzare un determinato task." />
+<link rel="canonical" href="https://baudo2048.github.io/fit/2018/02/01/vba-development.html" />
+<meta property="og:url" content="https://baudo2048.github.io/fit/2018/02/01/vba-development.html" />
+<meta property="og:site_name" content="Giuseppe Baudo" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-02-01T00:00:00+01:00" />
+<script type="application/ld+json">
+{"description":"Excel VBA Folder Structure user interfaces commons - common functions implementing the business logic of our applicaiton format - helper subrouting handling excel sheets formatting operation1 - (oppure il nome dell’operation) operationN - ogni operation module conterrà tutte le function e subrouting utilizzate per automatizzare un determinato task.","@type":"BlogPosting","url":"https://baudo2048.github.io/fit/2018/02/01/vba-development.html","headline":"VBA Development","dateModified":"2018-02-01T00:00:00+01:00","datePublished":"2018-02-01T00:00:00+01:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://baudo2048.github.io/fit/2018/02/01/vba-development.html"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <link type="application/atom+xml" rel="alternate" href="https://baudo2048.github.io/fit/feed.xml" title="Giuseppe Baudo" />
+  
+
+  <link rel="stylesheet" href="/fit/assets/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo" rel="stylesheet">
+  <style>
+  @import url('https://fonts.googleapis.com/css?family=Bevan');
+  </style>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+  <script type="text/javascript" src="/assets/js/webrtc/adapter.js"></script>
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="/fit/assets/js/jquery-ui/jquery-ui.js"></script>
+  <script src="/fit/assets/js/pdfjs/build/pdf.js"></script>
+  <script src="/fit/assets/js/pdfjs/build/pdf.worker.js"></script>
+  <!-- <script src="/fit/assets/js/jplayer/dist/jplayer/jquery.jplayer.js"></script>
+  <script src="/fit/assets/js/jplayer/dist/jplayer/jquery.jplayer.swf"></script> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/5.5.6/Rx.js"></script> -->
+
+  <!-- <script src="/fit/assets/js/app_settings.js"></script> -->
+  <script>
+var AppSettings = (()=>{
+  function AppSettings(){
+    this.apiKey = 'sRlJ7RW1HNf0iR7-RDx5TyurrVhjCA7c';
+    this.base_db_Uri = 'https://api.mlab.com/api/1';
+    this.db_name = 'baudo2048';
+  }
+})();
+
+//var appSettings = new AppSettings();
+</script>
+
+  <!-- <script src="/fit/assets/js/model.js"></script> -->
+  <!-- This model depends on document and window. In other words it doesn't have
+any dependencies because those objects are available in every browser -->
+
+<script>
+'use strict';
+
+var M = (function(){
+  //CUSTOM EVENTS EMITTER
+  var clockEv = new Event('clock');
+  var newDoc = new Event('newDoc');
+  var screenSizeChanged = new Event('screenSizeChanged');
+  var clientWidthChanged = new Event('clientWidthChanged');
+  var clientHeightChanged = new Event('clientHeightChanged');
+
+  function M(){
+    this.clock=0;
+    document.dispatchEvent(clockEv);
+
+    this.currDoc = [];
+    this.clientWidth = 0;
+    this.clientHeight = 0;
+    this.screenWidth = 100;//document.body.clientWidth;
+    this.screenHeight = 100;//document.body.clientHeight;
+    this.windowWidth = window.innerWidth;
+    this.windowHeight = window.innerHeight;
+
+    window.addEventListener('resize', this.onResize);
+    document.addEventListener('resize', this.onResize);
+  }
+
+  M.prototype.setClock = function(clock)
+  {
+    this.clock = clock;
+    document.dispatchEvent(clockEv);
+  };
+
+  M.prototype.getClock = function()
+  {
+    return this.clock;
+  };
+
+  M.prototype.addDoc = function(doc)
+  {
+    this.currDoc.push(doc);
+    document.dispatchEvent(newDoc);
+  }
+
+  M.prototype.getCurrDocLen = function()
+  {
+    return this.currDoc.length;
+  }
+
+  M.prototype.getCurrDoc = function ()
+  {
+    return this.currDoc;
+  }
+
+  M.prototype.getScreenWidth = () =>
+  {
+    return this.screenWidth;
+  }
+
+  M.prototype.setScreenWidth = (screenWidth) =>
+  {
+    this.screenWidth = screenWidth;
+    document.dispatchEvent(screenSizeChanged);
+  }
+
+  M.prototype.getScreenHeight = () =>
+  {
+    return this.screenHeight;
+  }
+
+  M.prototype.setScreenHeight = (screenHeight) =>
+  {
+    this.screenHeight = screenHeight;
+    document.dispatchEvent(screenSizeChanged);
+  }
+
+  M.prototype.getWindowWidth = function ()
+  {
+    return this.windowWidth;
+  }
+
+  M.prototype.setWindowWidth = function (windowWidth)
+  {
+    this.screenWidth = windowWidth;
+    document.dispatchEvent(screenSizeChanged);
+  }
+
+  M.prototype.getWindowHeight = function()
+  {
+    return this.windowHeight;
+  }
+
+  M.prototype.setWindowHeight = function(windowHeight)
+  {
+    this.windowHeight = windowHeight;
+    document.dispatchEvent(screenSizeChanged);
+  }
+
+  M.prototype.getClientWidth = function(){
+    return this.clientWidth;
+  };
+
+  M.prototype.setClientWidth = function(w){
+    this.clientWidth = w;
+    document.dispatchEvent(clientWidthChanged);
+  };
+
+  M.prototype.getClientHeight = function(){
+    return this.clientHeight;   // SUPER STATICALLY TYPED ERROR - INTROVABILE
+  };
+
+  M.prototype.setClientHeight = function(h){
+    console.log('h is' + h);
+    this.clientHeight = h;
+    document.dispatchEvent(clientHeightChanged);
+  };
+
+
+
+  M.prototype.onResize = function()
+  {
+    this.clientWidth = document.body.clientWidth;
+    this.clientHeight = document.body.clientHeight;
+
+    this.screenWidth = document.body.clientWidth;
+    this.screenHeight = document.body.clientHeight;
+
+    this.windowWidth = window.innerWidth;
+    this.windowHeight = window.innerHeight;
+
+
+    document.dispatchEvent(screenSizeChanged);
+  }
+
+  M.prototype.init = function(that){
+    console.log('init cocker');
+    setInterval(()=>{
+      that.setClock(that.getClock()+1);
+    },1000);
+  };
+
+
+  return M;
+}());
+</script>
+
+<script>
+var model = new M();
+model.init(model);
+</script>
+
+  <!-- <script src="/fit/assets/js/services.js"></script> -->
+  <script>
+// LO INIZIALIZZO O PRENDO DA SETTING OPPURE PRENDO DEFAULT
+function save(doc, coll){
+  console.log('save services called');
+    var baseUri = 'https://api.mlab.com/api/1',
+          apiKey = 'sRlJ7RW1HNf0iR7-RDx5TyurrVhjCA7c',
+          db_name = 'baudo2048';
+      $.ajax( {
+          url: baseUri + "/databases/"+db_name+"/collections/"+coll+"?apiKey="+apiKey,
+          data: JSON.stringify( doc ),
+          type: "POST",
+          contentType: "application/json" } );
+}
+
+function open(query, coll, callback){
+  console.log('open services called');
+  var baseUri = 'https://api.mlab.com/api/1',
+        apiKey = 'sRlJ7RW1HNf0iR7-RDx5TyurrVhjCA7c',
+        db_name = 'baudo2048';
+    return $.ajax( {
+        url: baseUri + "/databases/"+db_name+"/collections/"+coll+"?q="+JSON.stringify(query)+"&apiKey="+apiKey,
+        type: "GET",
+        contentType: "application/json",
+        success: callback} );
+}
+
+function openHtml(url, options, callback){
+  console.log('openHtml services called');
+  return $.ajax({
+    url: 'http://www.cs.unibo.it/~dallago/OTT1718/primaparte.pdf',
+    type: 'GET',
+    contentType: 'application/html',
+    success: callback
+  });
+}
+</script>
+
+</head>
+
+
+  <body>
+    <div class="horizontal-layout">
+      <header class="header-default-component" role="banner">
+          <div class="wrapper"><input
+  class="search-box"
+  name="search"
+  type="text" />
+
+<style>
+.search-box {
+  height: 30px;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 0px 0;
+  margin-top: 10px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; }
+</style>
+<script>
+(function($){
+  $.fn.search_box = function() {
+    this.keyup(function(eventObject){     // PROBLEM - POLYMORPHISM
+      var s = eventObject.target.value;
+      // Andiamo sul semplice. Eliminiamo tutte le li che non contengono nel testo del tag a la parola cercata.
+      var k = eventObject.target.value;
+      var l = $('.post-link').each(function(index, element){ //ATTENZIONE DIPENDENZA AD ALTRE ZONE DEL DOM
+        if (!$(element).html().toLowerCase().includes(k.toLowerCase())){
+          //hide
+          $(element).parent().parent().hide();
+        } else {
+          $(element).parent().parent().show();
+        }
+      });
+
+
+    });
+
+    return this;
+  };
+}(jQuery));
+
+// CONFIGURATION
+$(document).ready(function(){
+    $('.search-box').search_box();
+    $('.search-box').toggleClass('hide');
+});
+</script>
+</div>
+          <div class="wrapper"><!-- Attenzione ci sono dipendenze ad altro HTML e altro JS -->
+<div class="menu-component">
+	<!-- <span class="menu-caption"><i class="material-icons">apps</i></span> -->
+	<span class="menu-item home-item"><i class="material-icons">home</i></span>
+	<span class="menu-item add-item"><i class="material-icons">add</i></span>
+	<!-- <span class="menu-item about-item"><i class="material-icons">info</i></span> -->
+	<!-- <span class="menu-item"><i class="material-icons">restore</i></span> -->
+	<!-- <span class="menu-item toggle-document-item"><i class="material-icons">book</i></span> -->
+	<!-- <span class="menu-item save-item"><i class="material-icons">save</i></span> -->
+	<!-- <span class="menu-item add-photo-item"><i class="material-icons">add_a_photo</i></span> -->
+	<span class="menu-item freccia-item"><i class="material-icons">call_made</i></span>
+	<span class="menu-item text-item"><i class="material-icons">note_add</i></span>
+	<span class="menu-item pdf-item"><i class="material-icons">picture_as_pdf</i></span>
+	<span class="menu-item settings-item"><i class="material-icons">build</i></span>
+	<span class="menu-item group-item"><i class="material-icons">group</i></span>
+	<span class="menu-item test-item"><i class="material-icons">trending_up</i></span>
+	<span class="menu-item audiotrack-item"><i class="material-icons">audiotrack</i></span>
+	<span class="menu-item search-item"><i class="material-icons">search</i></span>
+</div>
+
+<style>
+.menu-component {
+	background-color: yellow;
+}
+</style>
+
+<script>
+$(document).ready(function(){
+	document.addEventListener('newDoc', function(e){
+		$('.toggle-document-item').html('Document(' + model.getCurrDocLen() + ')');
+	});
+});
+</script>
+
+<script>
+$(document).ready(function(){
+	$('.about-item').click(function(eventObject){
+		console.log('about-item clicked');
+		// qui ci essere problema di redirect!!!
+	});
+
+	$('.toggle-document-item').click(function(){
+		console.log('toggle-document-item clicked');
+	});
+
+	$('.save-item').click(function(){
+		console.log('save-item clicked');
+
+		// devo salvare l'article html e css
+		// save html with computed css
+		var article = $('article').html();
+		console.log(JSON.stringify(article));
+
+		// prima di salvare verifico se esiste già
+		save({name: $('.search-box').val(), article: JSON.stringify(article)},'articles');
+	});
+
+	$('.freccia-item').click(function(){
+		// SETTO SOME css
+
+		// CLICK Restart
+
+		// CLICK END
+	});
+
+	$('.text-item').click(function(){
+		console.log('text-item clicked');
+		$('.home-content-manager > *').hide(); // hide all other - BAD PRACTICE
+		$('.history-panel-component').show(); // PORKAROUND
+		$('.custom-textarea-box').show();
+		$('.custom-textarea-box').focus();
+	});
+
+	$('.home-item').click(function(){
+		console.log('home-item clicked');
+		$('.home-content-manager > *').hide();
+	});
+
+	$('.pdf-item').click( () => {
+		console.log('pdf-item clicked');
+		$('.home-content-manager > *').hide(); // hide all other - BAD PRACTICE
+		$('.custom-iframe').show();
+	});
+
+	$('.menu-item.add-item').click( () => {
+		console.log('add-item clicked');
+		$('.home-content-manager > *').hide(); // hide all other - BAD PRACTICE
+		$('.item-chooser-comp').show();
+	});
+
+	$('.menu-item.test-item').click( () => {
+		console.log('test-item clicked');
+		$('.home-content-manager > *').hide(); // hide all other - BAD PRACTICE
+		$('.editor-full').show();
+	});
+
+	$('.menu-item').click(function(){
+		//document.dispatchEvent(new Event('app.events.menu.itemClicked')); //IMPARARE A PASSARE OBJ A EVENT
+	});
+
+	$('.about-item').click(function(){
+		document.dispatchEvent(new Event('app.events.menu.itemClicked')); //IMPARARE A PASSARE OBJ A EVENT
+	});
+
+	$('.search-item').click(function(){
+		console.log('search-item clicked');
+		$('.search-box').toggleClass('hide');
+		$('.search-box').focus();
+		//document.dispatchEvent(new Event('app.events.menu.itemClicked')); //IMPARARE A PASSARE OBJ A EVENT
+	});
+
+});
+</script>
+
+<script>
+//INPUT CONNECTORS
+
+</script>
+</div>
+          <hr class="custom-hr"></hr>
+
+<style>
+.custom-hr {
+  cursor: n-resize;
+}
+</style>
+
+<script>
+(function($){
+  var name = '.custom-hr';
+  $(name).draggable();
+}(jQuery));
+</script>
+
+      </header>
+
+      <main class="page-content-component" aria-label="Content">
+          <div class="home-content-manager">
+  <div class="document-viewer">
+
+</div>
+
+<script>
+$('.document-viewer').hide();
+(function($){
+  document.addEventListener('newDoc', function(e){
+    model.getCurrDoc().forEach(function(i,el){      
+      $('.document-viewer').append(el);
+    });
+  });
+}(jQuery));
+
+
+</script>
+
+  <!-- <iframe
+  class="custom-iframe"
+  src="/fit/assets/pdf/%5BBarendregt%5D%20Lambda%20calculi%20with%20types.pdf"
+  type="application/pdf">
+</iframe> -->
+
+<embed
+  class="custom-iframe"
+  src="/fit/assets/pdf/%5BBarendregt%5D%20Lambda%20calculi%20with%20types.pdf#page=15"
+  type="application/pdf">
+</embed>
+
+<!-- <style>
+/** QUESTE VALGONO COME !IMPORTANT */
+.custom-iframe {
+  diplay: block;
+  position: fixed;
+  top: 15%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 400px;
+  width: 100%;
+}
+</style> -->
+
+<script>
+var testEmbed = document.getElementsByClassName('custom-iframe')[0];
+//$('.custom-iframe').hide();
+
+//$('.custom-iframe').css('width', model.getWindowWidth()); console.log('model.getWindowWidth = ' + model.getWindowWidth());
+//$('.custom-iframe').css('height', model.getWindowHeight()*0.4); console.log('windowHeight: ' +model.getWindowHeight() );
+
+
+document.addEventListener('screenSizeChanged',function(){
+  //$('.custom-iframe').css('width', model.getWindowWidth());
+  //$('.custom-iframe').css('height', model.getWindowHeight());
+});
+
+</script>
+
+  <!--
+  DEPENDENCIES:
+  - crud services
+
+-->
+
+<div class="add-document-component">
+  <h5>Create new document</h5>
+  <input class="new-doc-title" type="text">
+  <input class="new-doc-subtitle" type="text">
+  <textarea class="new-doc-descr"></textarea>
+  <span class="add-document-confirm-item"><i class="material-icons">done</i></span>
+</div>
+
+<style>
+.add-document-component{
+  display: block;
+  position: fixed;
+  top: 40%;
+  margin: auto;
+  left:0;
+  right: 0;
+  width: 400px;
+}
+
+
+.new-doc-title {
+  display: block;
+}
+
+.new-doc-subtitle {
+  display: block;
+}
+
+.new-doc-descr{
+  display: block;
+}
+
+.add-document-confirm-item{
+  cursor: pointer;
+}
+</style>
+
+<script>
+(function(){
+  var th = '.add-document-component';
+
+  $(th).hide();
+
+  $(document).ready(function(){
+    $('.add-document-confirm-item').click(function(){
+      console.log('add-document-confirm-item clicked');
+      var docToStore = {
+        title: $('.new-doc-title').val(),
+        subtitle: $('.new-doc-subtitle').val(),
+        description: $('.new-doc-descr').val(),
+        properties: {es:'1'}
+      }; // QUI MI FERMO PERCHE CI VUOLE LA SINTASSI OBJ STYLE
+      save(docToStore, 'articles');
+    });
+  });
+}());
+
+</script>
+
+  <!--
+  DEPENDENCIES
+  - crud services
+-->
+
+<div class="add-component-component">
+  <h5>Create new Component</h5>
+  <input class="new-comp-name" type="text">
+  <textarea class="add-component-textarea new-comp-description"></textarea>
+  <textarea class="add-component-textarea new-comp-html"></textarea>
+  <textarea class="add-component-textarea new-comp-css"></textarea>
+  <textarea class="add-component-textarea new-comp-js"></textarea>
+  <i class="add-component-confirm-item material-icons">done</i>
+</div>
+
+
+
+<style>
+.add-component-component{
+  display: block;
+  position: relative;
+  top: 0%;
+  margin: auto;
+  left:0;
+  right: 0;
+  width: 800px;
+}
+
+.add-component-textarea {
+  width: 800px;
+  height: 600px;
+}
+
+.new-comp-html {
+  display: block;
+}
+
+.new-comp-css {
+  display: block;
+}
+
+.new-comp-js{
+  display: block;
+}
+
+.add-component-confirm-item{
+  cursor: pointer;
+}
+
+</style>
+
+<script>
+(function(){
+  var th = '.add-component-component';
+  var span = '.add-component-confirm-item';
+
+  $(th).hide();
+
+  $(document).ready(function(){
+    $(span).click(function(){
+      console.log(span + ' clicked');
+      var docToStore = {
+        name: $('.new-comp-name').val(),
+        title: $('.new-comp-name').val(),  //campo che serve a post-list-comp
+        description: $('.new-comp-description').val(),
+        html: $('.new-comp-html').val(),
+        css: $('.new-comp-css').val(),
+        js: $('.new-comp-js').val()
+      };
+      save(docToStore, 'components');
+
+      $(th).hide();
+    });
+  });
+}());
+
+</script>
+
+  <div class="console-component">
+  <textarea class="console-component-textarea"></textarea>
+</div>
+
+<style>
+.console-component{
+  display: block;
+  position: fixed;
+  top: 40%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 200px;
+}
+
+.console-component-textarea {
+  background-color: black;
+  color: yellow;
+}
+</style>
+
+<script>
+(function(){
+  var th = '.console-component';
+  var tx = '.console-component-textarea';
+
+  $(th).hide();
+  $(tx).val(' #-> ');
+
+  $(document).ready(function(){
+
+  });
+}());
+</script>
+
+  <div class="item-chooser-comp">
+  <div class="gallery item-chooser-new-doc">
+      <i class="material-icons">note_add</i>
+  </div>
+
+  <div class="gallery item-chooser-comp-component">
+      <i class="material-icons">code</i>
+  </div>
+
+</div>
+
+<style>
+.item-chooser-comp{
+  margin: auto;
+  left:0;
+  right: 0;
+  width: 800px;
+}
+
+
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+</style>
+
+<script>
+(function(){
+  var th = '.item-chooser-comp';
+  var comp =".item-chooser-comp-component";
+  var itemDoc = '.gallery.item-chooser-new-doc'
+  var dep = '.add-component-component';
+  var addDoc = '.add-document-component';
+  var addDoc2 = '.generic-editor-component';
+
+  $(th).hide();
+
+  $(document).ready(function(){
+    $(comp).click(()=>{
+      console.log(comp + ' clicked');
+      $('.home-content-manager > *').hide();
+      $(dep).show();
+    });
+
+    $(itemDoc).click(()=>{
+      console.log(itemDoc + 'clicked');
+      $('.home-content-manager > *').hide();
+      $(addDoc2).show();
+    });
+
+  });
+}());
+</script>
+
+  <div class="component-list-component"></div>
+
+<style>
+.post-list-title {
+  margin: 0;
+  padding: 0;
+  color: #1a0dab;
+  cursor: pointer;
+}
+.post-list-subtitle {
+  margin: 0;
+  padding: 0;
+  color: #006621;
+  font-size: small;
+}
+.post-list-descr {
+  margin:0;
+  padding: 0;
+  color:#545454;
+  font-size: small;
+}
+</style>
+
+<script>
+(function(){
+    console.log('component-list-component componenet activated ');
+
+    // DEPENDENCIES
+    var th = $('.component-list-component');
+    var dep1 = $('.search-box');
+
+    $(document).ready(function(components){
+      //convertire in app.events.search.keyup
+      $(dep1).keyup(function(){
+        $(th).show();
+        $('.component-list-component').html('');
+        var components = open({title: $(dep1).val()},'components', function(data, status, xhr){
+        data.forEach(function(el){
+          $('.component-list-component').append('<h5 class="post-list-title">'+el.title+'</h5>');
+          $('.component-list-component').append('<h6 class="post-list-subtitle">'+el.subtitle+'</h6>');
+          $('.component-list-component').append('<p class="post-list-descr">'+el.description+'</p>');
+          $('.component-list-component').append('<br/>');
+        });
+        $('.post-list-title').click(function(){
+          $('.home-content-manager > *').hide();
+          $('.add-component-component').show();
+        });
+      });
+    });
+  });
+
+
+
+}());
+</script>
+
+  <!--
+  DEPENDENCIES
+  - crud services
+-->
+
+<div class="generic-editor-component">
+  <h6>Create new Component</h6>
+  <i class="generic-editor-confirm-item material-icons">done</i>
+  <hr></hr>
+  <input class="new-comp-name" type="text">
+  <textarea class="generic-editor-textarea new-comp-description"></textarea>
+  <textarea class="generic-editor-textarea new-comp-src"></textarea>
+</div>
+
+
+
+<style>
+.generic-editor-component{
+  display: block;
+  position: relative;
+  top: 0%;
+  margin: auto;
+  left:0;
+  right: 0;
+  width: 800px;
+}
+
+.generic-editor-textarea {
+  width: 800px;
+  height: 600px;
+}
+
+.new-comp-html {
+  display: block;
+}
+
+.new-comp-css {
+  display: block;
+}
+
+.new-comp-js{
+  display: block;
+}
+
+.generic-editor-confirm-item{
+  cursor: pointer;
+}
+
+.new-comp-description {
+  height: 150px;
+}
+
+</style>
+
+<script>
+(function(){
+  var th = '.generic-editor-component';
+  var span = '.generic-editor-confirm-item';
+
+  console.log(th + 'activated');
+  $(th).hide();
+
+  $(document).ready(function(){
+    $(span).click(function(){
+      console.log(span + ' clicked');
+      var docToStore = {
+        name: $('.new-comp-name').val(),
+        title: $('.new-comp-name').val(),  //campo che serve a post-list-comp
+        description: $('.new-comp-description').val(),
+        src: $('.new-comp-src').val(),
+      };
+      save(docToStore, 'components');
+
+      $(th).hide();
+    });
+  });
+}());
+
+</script>
+
+  <div class="advertising-component">
+  <div class="slide 1"><span>Hi There!<span></div>
+  <div class="slide 2">There are something</div>
+  <div class="slide 3">I would say to you</div>
+</div>
+
+
+
+<style>
+.advertising-component {
+  background-color: white;
+}
+.slide {
+  background-color: brown;
+  text-align: center;
+}
+
+</style>
+
+<script>
+//var app.components.advertising =      // CREARE NAMESPACES FOR COMPONENTS
+(function(){
+  var th = '.advertising-component';
+  var innerDiv = '.slide';
+
+  console.log(th + ' activated');
+
+  //$(th).hide();
+  //$(innerDiv).hide();
+
+  $(document).ready(function(){
+
+    var index = -1;    // <-- secondo me l'errore si verifica qui. ADESSO index la metto nel dom
+    document.addEventListener('clock',function(){
+      if(model.getClock()%2==0){
+        $(innerDiv).hide();
+        $(innerDiv + '.' + index++).show();
+      }
+    });
+    document.addEventListener('app.events.menu.itemClicked', function(){
+      // E QUI HO RISOLTO UN ALTRO PROBLEMA BECAUSE NON MI DEVO PREOCCUPARE
+      // DEL LAYOUT MANAGER DI FARE IL SUO LAVORO
+      index=-1;
+      $(th).show();
+      console.log('advertising inded changed '+index);
+
+    });
+
+  });
+}());
+</script>
+
+  <div class="dallago-comp">
+
+</div>
+
+<style>
+.dallago-comp{
+  display: block;
+  position: fixed;
+  top: 40%;
+  left: 0;
+  margin: auto;
+  width: 100px;
+}
+</style>
+
+<script>
+(function(){
+  var th = '.dallago-comp';
+  var searchBox = '.search-box';
+
+  //$(th).hide();
+  console.log(th + ' activated');
+
+  $(document).ready(function(){
+    $(searchBox).keyup(function(){
+      // var res = openHtml(null,null,function(data, status, xhr){
+      //   console.log('data', data);
+      // });
+    });
+  });
+}());
+</script>
+
+  <!-- DIPENDE DA HORIZONTALLAYOUT -->
+
+<textarea class="editor-full"></textarea>
+
+<script>
+var EditorFull = (function(){
+  function EditorFull(){
+
+  }
+  return EditorFull;
+}());
+var editorFull = new EditorFull();
+</script>
+
+</div>
+<style>
+.home-content-manager{
+  width: 100%;
+  height: 100%;
+}
+
+.home-content-manager > * {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+<style>
+<script>
+var HomeContentManager = (function(){
+  var change = new Event('change');
+
+  // HomeContentManager.prototype.hideAll = function(){
+  //
+  // }
+  var th = '.home-content-manager';
+
+  $(document).ready(function(){
+
+  });
+}());
+</script>
+
+      </main>
+
+      <footer class="footer-default-component">
+        
+      </footer>
+    </div>
+
+    <style>
+    * {
+      padding:0;
+      margin:0;
+    }
+      .header-default-component{
+        background-color: green;
+      }
+      .page-content-component{
+        background-color: blue;
+      }
+      .footer-default-component{
+        background-color: grey;
+        bottom:0;
+        height:10px;
+      }
+    </style>
+
+    <script>
+      var HorizontalLayout = (function(){
+        function HorizontalLayout (){
+          this.headerHeight = $('.header-default-component').css('height').replace('px','');
+        }
+
+        HorizontalLayout.prototype.getHeaderHeight = function(){
+          return $('.header-default-component').css('height').replace('px','')-10;
+        };
+
+        HorizontalLayout.prototype.resize = function(that){
+          that.mainHeight = window.innerHeight-that.getHeaderHeight();
+          $('main').css('height',that.mainHeight);
+        };
+
+
+        return HorizontalLayout;
+      }());
+
+      var horizontalLayout = new HorizontalLayout();
+      window.addEventListener('resize', horizontalLayout.resize(horizontalLayout));
+
+    </script>
+
+  </body>
+</html>
