@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "About"
+date:   2018-01-01 00:00:00 +0100
+categories:
+---
+This simple user interface is an attempt to introduce to the complexity of
+user interface design and implementation.
+
+I've set out the main point that is *content*, the king of internet. In another
+point of view

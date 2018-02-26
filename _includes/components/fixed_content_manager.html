@@ -1,0 +1,21 @@
+<div class="fixed-content-manager">
+  {% include components/canvas.html %}
+</div>
+
+<style>
+.fixed-content-manager{
+  width: 100%;
+  height: 100%;
+  background-color: green;
+}
+.fixed-content-manager > * {
+  width: 100%;
+  height: 100%;
+}
+</style>
+
+<script>
+var CanvasComponent = (function(){
+  console.log('fixed-content-manager activated');
+}());
+</script>

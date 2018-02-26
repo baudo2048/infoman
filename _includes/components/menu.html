@@ -16,6 +16,7 @@
 	<span class="menu-item test-item"><i class="material-icons">trending_up</i></span>
 	<span class="menu-item audiotrack-item"><i class="material-icons">audiotrack</i></span>
 	<span class="menu-item search-item"><i class="material-icons">search</i></span>
+	<span class="menu-item webphone-item"><i class="material-icons">record_voice_over</i></span>
 </div>
 
 <style>
@@ -106,6 +107,13 @@ $(document).ready(function(){
 		console.log('search-item clicked');
 		$('.search-box').toggleClass('hide');
 		$('.search-box').focus();
+		//document.dispatchEvent(new Event('app.events.menu.itemClicked')); //IMPARARE A PASSARE OBJ A EVENT
+	});
+
+	$('.webphone-item').click(function(){
+		console.log('webphone-item clicked');
+		$('.home-content-manager > *').hide(); // hide all other - BAD PRACTICE
+		$('.webphone-component').show();
 		//document.dispatchEvent(new Event('app.events.menu.itemClicked')); //IMPARARE A PASSARE OBJ A EVENT
 	});
 

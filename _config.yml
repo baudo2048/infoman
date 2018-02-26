@@ -17,10 +17,10 @@ title: Giuseppe Baudo
 email: baudo81@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Pedagogia, Antropologia, Psicologia, Pedagogia Speciale.
-baseurl: "/fit"
-url: "https://baudo2048.github.io"
-#baseurl: "/infoman"
+#baseurl: "/fit"
 #url: "https://baudo2048.github.io"
+baseurl: "/infoman"
+url: "https://baudo2048.github.io"
 #baseurl: "/"
 #url: "http://localhost:4000"
 twitter_username: todo
@@ -31,6 +31,7 @@ markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
+destination: "docs"
 #  - jekyll-coffeescript
 
 # Exclude from processing.

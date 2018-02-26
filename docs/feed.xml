@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.2">Jekyll</generator><link href="https://baudo2048.github.io/infoman/feed.xml" rel="self" type="application/atom+xml" /><link href="https://baudo2048.github.io/infoman/" rel="alternate" type="text/html" /><updated>2018-02-26T16:19:37+01:00</updated><id>https://baudo2048.github.io/infoman/</id><title type="html">Giuseppe Baudo</title><subtitle>Pedagogia, Antropologia, Psicologia, Pedagogia Speciale.</subtitle><entry><title type="html">Lambda calcolo</title><link href="https://baudo2048.github.io/infoman/2018/02/15/lambda-calcol.html" rel="alternate" type="text/html" title="Lambda calcolo" /><published>2018-02-15T00:00:00+01:00</published><updated>2018-02-15T00:00:00+01:00</updated><id>https://baudo2048.github.io/infoman/2018/02/15/lambda-calcol</id><content type="html" xml:base="https://baudo2048.github.io/infoman/2018/02/15/lambda-calcol.html">&lt;p&gt;&lt;img src=&quot;https://baudo2048.github.io/infoman/assets/img/lambda.png&quot; alt=&quot;lambda&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Introduction&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;History&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://baudo2048.github.io/infoman/assets/img/intro-lambda.png&quot; alt=&quot;intro-lambda&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Computability&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://baudo2048.github.io/infoman/assets/img/intro-lambda-2.png&quot; alt=&quot;intro-lambda-2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Type-free lambda calculus - aka gli passo quello che voglio&lt;/strong&gt;
+&lt;img src=&quot;https://baudo2048.github.io/infoman/assets/img/type-free-lambda.png&quot; alt=&quot;type-free-lambda&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;There exist a typed version introduced by Curry (1934) (the father of hakell lang) for
+the so called combinatory logic, a variant of the lambda calculus and in Church
+(1940).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://baudo2048.github.io/infoman/assets/img/combinatory-logic.png&quot; alt=&quot;combinatory-logic&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Combinatory_logic&quot;&gt;combinatory-logic&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://baudo2048.github.io/infoman/assets/img/curry-1.png&quot; alt=&quot;curry-1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://baudo2048.github.io/infoman/assets/img/curry-2.png&quot; alt=&quot;curry-2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://baudo2048.github.io/infoman/assets/img/curry-var-1.png&quot; alt=&quot;curry-var-1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://baudo2048.github.io/infoman/assets/img/curry-3.png&quot; alt=&quot;curry-3&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Type-free lambda calculus - definition&lt;/strong&gt;&lt;br /&gt;
+Prendere appunti su come si definisce un linguaggio. Perchè il Prof. definisce
+un linguaggio? cos’è un linguaggio?&lt;/p&gt;
+
+&lt;p&gt;Ci sono solo dure regole: substitution e …?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Meta-teoria del Lambda Calcolo non tipato&lt;/strong&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Plain Old Text</title><link href="https://baudo2048.github.io/infoman/2018/02/13/plain-old-text.html" rel="alternate" type="text/html" title="Plain Old Text" /><published>2018-02-13T00:00:00+01:00</published><updated>2018-02-13T00:00:00+01:00</updated><id>https://baudo2048.github.io/infoman/2018/02/13/plain-old-text</id><content type="html" xml:base="https://baudo2048.github.io/infoman/2018/02/13/plain-old-text.html">&lt;p&gt;What if all knowledge would be only plain old text? The reason is very simple
+the problem is to go directly to the main goals. So here I am!&lt;/p&gt;
+
+&lt;p&gt;What I need is only two hour a day of writing activity, maybe I may return
+to old abitudini e magari chissà…&lt;/p&gt;
+
+&lt;p&gt;The answer is: is almost impossible if you work eight hours a day.&lt;/p&gt;
+
+&lt;p&gt;So, how to improve our knowledge of world and increase our positions in
+society. What are limiting your life to achieve your goals?&lt;/p&gt;
+
+&lt;p&gt;Time is the king…&lt;/p&gt;</content><author><name></name></author><summary type="html">What if all knowledge would be only plain old text? The reason is very simple the problem is to go directly to the main goals. So here I am!</summary></entry><entry><title type="html">Peer-to-Peer Development</title><link href="https://baudo2048.github.io/infoman/2018/02/13/peer-to-peer-development.html" rel="alternate" type="text/html" title="Peer-to-Peer Development" /><published>2018-02-13T00:00:00+01:00</published><updated>2018-02-13T00:00:00+01:00</updated><id>https://baudo2048.github.io/infoman/2018/02/13/peer-to-peer-development</id><content type="html" xml:base="https://baudo2048.github.io/infoman/2018/02/13/peer-to-peer-development.html">&lt;p&gt;&lt;img src=&quot;/assets/img/peerjs.png&quot; alt=&quot;peerjs&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You need to know about ssl keys and certificates.&lt;/p&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Popolo Della Famiglia - Bologna</title><link href="https://baudo2048.github.io/infoman/2018/02/11/pdf-bologna.html" rel="alternate" type="text/html" title="Popolo Della Famiglia - Bologna" /><published>2018-02-11T00:00:00+01:00</published><updated>2018-02-11T00:00:00+01:00</updated><id>https://baudo2048.github.io/infoman/2018/02/11/pdf-bologna</id><content type="html" xml:base="https://baudo2048.github.io/infoman/2018/02/11/pdf-bologna.html">&lt;p&gt;Non poteva che cadere nel giorno di Lourdes questo post perchè…&lt;/p&gt;
+
+&lt;p&gt;Il papa…&lt;/p&gt;
+
+&lt;p&gt;Chi cazzo sono questions&lt;/p&gt;
+
+&lt;p&gt;Chi è adinolfi&lt;/p&gt;
+
+&lt;p&gt;Chi è spaccapaniccia&lt;/p&gt;</content><author><name></name></author><summary type="html">Non poteva che cadere nel giorno di Lourdes questo post perchè…</summary></entry><entry><title type="html">Logics for Informatics</title><link href="https://baudo2048.github.io/infoman/education/logics/2018/02/09/logics-for-informatics.html" rel="alternate" type="text/html" title="Logics for Informatics" /><published>2018-02-09T00:00:00+01:00</published><updated>2018-02-09T00:00:00+01:00</updated><id>https://baudo2048.github.io/infoman/education/logics/2018/02/09/logics-for-informatics</id><content type="html" xml:base="https://baudo2048.github.io/infoman/education/logics/2018/02/09/logics-for-informatics.html">&lt;p&gt;&lt;strong&gt;Logics Operators (symbols)&lt;/strong&gt;&lt;br /&gt;
+&lt;img src=&quot;https://baudo2048.github.io/infoman/assets/img/logics-operators.png&quot; alt=&quot;logics-operators&quot; /&gt;
+cercare su google: provable symbols
+Questo in pratica dovrebbe voler dire che dal sistema lambda è possibile
+dimostrare …&lt;/p&gt;
+
+&lt;p&gt;Logics is a very interesting environment although it is not clear where
+boundaries come from and what is the sequence of concepts a student needs to
+master before, during and after the course period.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://baudo2048.github.io/infoman/assets/img/banner-logica.png&quot; alt=&quot;logica&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The main focus of the logics at informatics is to explain what is computation.&lt;/p&gt;
+
+&lt;p&gt;What is descriptive complexity?&lt;/p&gt;
+
+&lt;p&gt;The least-fixed-point operator, which formalizes the power of making inductive
+definitions.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Second-Order logic&lt;/strong&gt;
+Second-order logic consist of first-order logic plus the power to quantify
+over relations on the universe.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://baudo2048.github.io/infoman/assets/img/second-order-logic.png&quot; alt=&quot;second-oder-logic&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Fagin theorem&lt;/strong&gt;
+Says that the queries computable in NP are exactly the second-order existential
+queries. A corollary do to Stockmeyer says that second-order queries are exactly
+those computable in the polynomial-time hierarchy.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Interleaving&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://baudo2048.github.io/infoman/assets/img/logics-systems-banner.png&quot; alt=&quot;system-banner&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Struttura di Kripke&lt;/strong&gt;
+&lt;img src=&quot;https://baudo2048.github.io/infoman/assets/img/kripke.png&quot; alt=&quot;kripke&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Oral Exams&lt;/strong&gt;
+Dimostrare che per ogni formula esiste un algoritmo NP.&lt;/p&gt;
+
+&lt;p&gt;What is pi_greco, mi pare di averla vista della complessità mannaggia&lt;/p&gt;
+
+&lt;p&gt;ELENCO CONCETTI PER L’ESAME ORALE DI FONDAMENTI LOGICI DELL’INFORMATICA&lt;/p&gt;
+
+&lt;p&gt;TEORIA
+•	Verifica di sistemi (in a general sense)
+•	Le macchine di turing sono tutto fuorchè modulari. Combinazione di macchine di turing. Con le funzione c’è la composizione!!!
+•	Qual è la più semplice struttura in matematica? I numeri naturali!
+Preparativi per il teorema di Bohm&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://baudo2048.github.io/infoman/assets/img/teorie-equazionali.png&quot; alt=&quot;teorie-equazionali&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Logica e Verifica (di sistemi)
+MATEMATICA
+KRIPKE = M = (S, S_0, R, L)
+S = insieme di stati – S_0 \subset S – R = relazione di transizione – L = funzione di etichettatura
+AP = Insieme di proposizioni atomiche che catturano le proprietà di interesse di uno stato
+S = Sistema (sua descrizione)  si fa considerare come un’interpretazione della formula P
+P = una proprietà attesa    si fa considerare come una formula di una particolare logica
+Verificare che S soddisfi P
+Verifica fatta in modo automatico
+Maybe = indecidibile   approssimazione del problema&lt;/p&gt;
+
+&lt;p&gt;Model checking =
+Come faccio a dire cos’è interpretazione per il sistema?
+Qual è la logica adatta a specificare P&lt;/p&gt;
+
+&lt;p&gt;Logica e basi di dati&lt;/p&gt;
+
+&lt;p&gt;Dominio = relazioni ok&lt;/p&gt;
+
+&lt;p&gt;Query = ??? funzione. Com’è fatta?
+Intanto il risultato è una relazione&lt;/p&gt;
+
+&lt;p&gt;Che funzione calcola una query?
+La base di dati è vista come una sequenza di relazioni ( quindi una ennupla di tutte le R)&lt;/p&gt;
+
+&lt;p&gt;Che espressività deve avere il linguaggio?&lt;/p&gt;
+
+&lt;p&gt;MATEMATICA
+Let D be SET generico dominio
+D = GENERICO DOMINIO – IL TIPO DI DATO DEL CAMPO
+R = SOTTO INSIEME&lt;/p&gt;
+
+&lt;p&gt;MODELLO RELAZIONALE IN LOGICA DEGLI INSIEMI
+Let D be SET – generic dominio
+Let D_1, D_n be SET - domini
+Let D_i be SET – rappresenta uno di quelli precedenti
+Let D^n be SET
+Let D^n = D_1 x … x D_n
+Let R be SET
+Let R \subset D^n&lt;/p&gt;
+
+&lt;p&gt;Insieme delle parti finite???&lt;/p&gt;
+
+&lt;p&gt;DOMANDE fatte all’esame e bocciato
+Database: datalog, passaggi da algebra relazionale a datalog o non so consa
+Verifica: CTL e CTL* e come si passa da uno all’altro.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://baudo2048.github.io/infoman/assets/img/datalog.png&quot; alt=&quot;datalog&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">Logics Operators (symbols) cercare su google: provable symbols Questo in pratica dovrebbe voler dire che dal sistema lambda è possibile dimostrare …</summary></entry><entry><title type="html">Eclipse Plugin Development</title><link href="https://baudo2048.github.io/infoman/devops/micro-operation-development/2018/02/06/eclipse-plugin-development.html" rel="alternate" type="text/html" title="Eclipse Plugin Development" /><published>2018-02-06T08:56:00+01:00</published><updated>2018-02-06T08:56:00+01:00</updated><id>https://baudo2048.github.io/infoman/devops/micro-operation-development/2018/02/06/eclipse-plugin-development</id><content type="html" xml:base="https://baudo2048.github.io/infoman/devops/micro-operation-development/2018/02/06/eclipse-plugin-development.html">&lt;p&gt;&lt;strong&gt;Introduction&lt;/strong&gt;&lt;br /&gt;
+Eclipse plugin development is a fun experience even though it has a lot of
+things we need to know to master the ability to convert an operation into an
+automation.&lt;/p&gt;
+
+&lt;p&gt;Eclipse is not only an editor for your java code, it is a platform, its main
+class itself is called &lt;em&gt;PlatformUI&lt;/em&gt;. This means that if you are able to create a
+java main file to execute it, you are already able to use the eclipse platform.&lt;/p&gt;
+
+&lt;p&gt;In a java developer point of view, it means that we can use every class of the
+java ide itself. More, you can use every class of every plugin installed in
+you eclipse ide.&lt;/p&gt;
+
+&lt;p&gt;In a management point of view, you should take care of eclipse plugin
+development because with it you can automate every operation you accomplish
+with eclipse. For example, change set management with rational tool concern.&lt;/p&gt;
+
+&lt;p&gt;For example, an important aspect of change set management is the ability
+to automate mail communication with other stakeholders. Suppose you have to send
+10 mails for each change set delivered in every stream you take care. Suppose
+you have to do that task 5 times a day for 5 days a week. It would be a every
+annoying life and a cost for your organization.&lt;/p&gt;
+
+&lt;p&gt;An operation is a complete sequence of task that a human being performs by
+a computer in order to obtain a result. An automation is the complete control
+of the operation da parte del computer. We may add a third category of
+operational functions called semi-automation in which human performs part of
+the sequence of task.&lt;/p&gt;
+
+&lt;p&gt;A real scenario could be found in large
+application where the amount is so heavy that we need a…&lt;/p&gt;
+
+&lt;p&gt;But torniamo a noi, how to start creating eclipse plugin for our operations.&lt;/p&gt;
+
+&lt;p&gt;Operations can be found everywhere in computer science et not only. Giuristi,
+Medici, etc.&lt;/p&gt;
+
+&lt;p&gt;The first thing to do is understand the I/O system. For now we consider
+just a view in which we put on some widget, for example an editor in which we
+write line of strings.&lt;/p&gt;
+
+&lt;p&gt;A questo punto si potrebbe pensare di salvare intanto un file su disco in modo
+da caricarlo nel nostro widget.&lt;/p&gt;
+
+&lt;p&gt;Another useful mechanism to obtain rapid responses about our code, for example
+printing the result of the following line of java code:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello Eclipse Development&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Eclipse Workbench Selection Service
+Suppose you want get the text in the clipbord, intanto la clipboard è
+selezionabile anche da windows stesso, ma questo è un altro discorso.&lt;/p&gt;
+
+&lt;p&gt;[SAMPLE CODE FOR SELECTION AND WORKBENCH, GETSITE() ETC.][sample-code]&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Eclipse Workbench Structure&lt;/strong&gt;&lt;br /&gt;
+This is an insight of the eclipse workbench structure. In order to get control
+over the widget in the views we need to start here.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://baudo2048.github.io/infoman/assets/img/strutturaEclipseWorkbench1.png&quot; alt=&quot;My helpful screenshot&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;For now we may consider window and workbench as denoting the same thing.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;n&quot;&gt;PlatformUI&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getQualcosa&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;IWorkspace ???&lt;/p&gt;
+
+&lt;p&gt;IViewReference -&lt;/p&gt;
+
+&lt;p&gt;Page - body of the window: contains views and editors&lt;/p&gt;
+
+&lt;p&gt;View -&lt;/p&gt;
+
+&lt;p&gt;Editor - quello dove si scrive il codice dei files. An editor is a visual
+component within a workbench page. Hence pay attentions because it isn’t
+the code itself but it is that ui component in which your code lives.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://baudo2048.github.io/infoman/assets/img/eclipse-ui-editor.png&quot; alt=&quot;ui-editor&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Widget ???&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;How to get reference of Window, Workbench, Workspace, Selection&lt;/strong&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;c1&quot;&gt;// WorkbenchWindow&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;IWorkbenchPage&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;workbenchPage&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;workbenchWindow&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getActivePage&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;ISelectionService&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;selectionService&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;workbenchWindow&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getSelectionService&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Object&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;service&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;workbenchWindow&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getService&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Shell&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;shell&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;workbenchWindow&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getShell&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;How to get the control of your Eclipse Window&lt;/strong&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;n&quot;&gt;IWorkbenchPage&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;page&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;IWorkbenchWindow&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;window&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PlatformUI&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getWorkbench&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getActiveWorkbenchWindow&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;window&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;page&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getActivePage&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;page&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// Look for a window and get the page off it!&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;IWorkbenchWindow&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;windows&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PlatformUI&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getWorkbench&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getWorkbenchWindows&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;windows&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++)&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;windows&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;window&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;windows&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;];&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;page&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;windows&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getActivePage&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;page&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;Logging&lt;/strong&gt;
+For fastest msgbox you can use:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://wiki.eclipse.org/Platform_UI/Notifications&quot;&gt;Platform UI/Notification&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://baudo2048.github.io/infoman/assets/img/t-029c7b48.png&quot; alt=&quot;notification&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://baudo2048.github.io/infoman/assets/img/t-958e4d17.png&quot; alt=&quot;event&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://baudo2048.github.io/infoman/assets/img/t-c9cc0de2.png&quot; alt=&quot;trigger&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Per usare il meccanismo delle notification occorre utilizzare accanto ad esso
+un meccanismo di scheduling.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Extensions and extentions point&lt;/strong&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;n&quot;&gt;org&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;eclipse&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;ui&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;views&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;How to create a view&lt;/strong&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;n&quot;&gt;org&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;eclipse&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;ui&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;How to take over other installed plugin - Jazz Plugin Development&lt;/strong&gt;
+not much work.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Fragment vs Feature&lt;/strong&gt;
+&lt;img src=&quot;https://baudo2048.github.io/infoman/assets/img/eclipse-jargon.png&quot; alt=&quot;eclipse-jargon&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Preferences&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;BIBLIOGRAFIA&lt;/strong&gt;&lt;br /&gt;
+[sample-code]: https://www.programcreek.com/java-api-examples/index.php?class=org.eclipse.ui.IWorkbenchPart&amp;amp;method=getSite&lt;br /&gt;
+[workbench-selection]: https://www.eclipse.org/articles/Article-WorkbenchSelections/article.html&lt;br /&gt;
+[PlatformUI]: http://help.eclipse.org/kepler/index.jsp?topic=%2Forg.eclipse.platform.doc.isv%2Freference%2Fapi%2Forg%2Feclipse%2Fui%2FPlatformUI.html&lt;br /&gt;
+[IWorkbench]: http://help.eclipse.org/kepler/index.jsp?topic=%2Forg.eclipse.platform.doc.isv%2Freference%2Fapi%2Forg%2Feclipse%2Fui%2FPlatformUI.html&lt;br /&gt;
+[IWorkbenchPart]: https://help.eclipse.org/luna/index.jsp?topic=%2Forg.eclipse.platform.doc.isv%2Freference%2Fapi%2Forg%2Feclipse%2Fui%2FIWorkbenchPart.html&lt;br /&gt;
+[QUESTIONS-1]: https://wiki.eclipse.org/FAQ_How_do_I_find_the_active_workbench_page%3F&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Jazz - Rational Team Concert&lt;/em&gt;&lt;br /&gt;
+[RTC]: https://www.ibm.com/developerworks/library/d-extend-customize-rational-team-concert-continuous-integration/index.html&lt;/p&gt;</content><author><name></name></author><summary type="html">Introduction Eclipse plugin development is a fun experience even though it has a lot of things we need to know to master the ability to convert an operation into an automation.</summary></entry><entry><title type="html">Google Chrome Plugin Development</title><link href="https://baudo2048.github.io/infoman/2018/02/06/chrome-plugin-development.html" rel="alternate" type="text/html" title="Google Chrome Plugin Development" /><published>2018-02-06T00:00:00+01:00</published><updated>2018-02-06T00:00:00+01:00</updated><id>https://baudo2048.github.io/infoman/2018/02/06/chrome-plugin-development</id><content type="html" xml:base="https://baudo2048.github.io/infoman/2018/02/06/chrome-plugin-development.html"></content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Security Management</title><link href="https://baudo2048.github.io/infoman/2018/02/02/security-management.html" rel="alternate" type="text/html" title="Security Management" /><published>2018-02-02T00:00:00+01:00</published><updated>2018-02-02T00:00:00+01:00</updated><id>https://baudo2048.github.io/infoman/2018/02/02/security-management</id><content type="html" xml:base="https://baudo2048.github.io/infoman/2018/02/02/security-management.html">&lt;p&gt;Security management…&lt;/p&gt;
+
+&lt;p&gt;OpenSSL&lt;/p&gt;
+
+&lt;p&gt;https://www.ssl.com/online-csr-and-key-generator/&lt;/p&gt;</content><author><name></name></author><summary type="html">Security management…</summary></entry><entry><title type="html">GitHub WebHook</title><link href="https://baudo2048.github.io/infoman/2018/02/02/github-webhook.html" rel="alternate" type="text/html" title="GitHub WebHook" /><published>2018-02-02T00:00:00+01:00</published><updated>2018-02-02T00:00:00+01:00</updated><id>https://baudo2048.github.io/infoman/2018/02/02/github-webhook</id><content type="html" xml:base="https://baudo2048.github.io/infoman/2018/02/02/github-webhook.html">&lt;p&gt;GitHub WebHook&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/github-webhooks.png&quot; alt=&quot;github-webhooks&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Abbiamo bisogno di un server rest&lt;/p&gt;
+
+&lt;p&gt;EVENTI
+Non aiuta i miei scopi perchè riguarda soltanto eventi che attengono
+al processo di gestione del source code. Nel nostro caso si tratta di una
+web page statica che invia e riceve determinati messaggi senza l’ausilio
+di un server web e gestito live da una serie di devops.&lt;/p&gt;
+
+&lt;p&gt;Passiamo a Wiresharke
+wiresharke sniffing.
+wiresharke development release cosaaa?&lt;/p&gt;</content><author><name></name></author><summary type="html">GitHub WebHook</summary></entry><entry><title type="html">Java Development</title><link href="https://baudo2048.github.io/infoman/2018/02/01/java-development.html" rel="alternate" type="text/html" title="Java Development" /><published>2018-02-01T01:01:01+01:00</published><updated>2018-02-01T01:01:01+01:00</updated><id>https://baudo2048.github.io/infoman/2018/02/01/java-development</id><content type="html" xml:base="https://baudo2048.github.io/infoman/2018/02/01/java-development.html">&lt;p&gt;First of all configure a dialects like groovy, extent, etc.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Move Files&lt;/strong&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kn&quot;&gt;package&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;isp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;cap&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;operations&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;java.io.IOException&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;java.nio.file.Files&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;java.nio.file.Paths&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ImportWsdl&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+
+	&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;throws&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;IOException&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;Files&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;move&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Paths&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;uri&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Paths&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;uri&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;REPLACE_EXISTING&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;file moved&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name>gb</name></author><summary type="html">First of all configure a dialects like groovy, extent, etc.</summary></entry></feed>
