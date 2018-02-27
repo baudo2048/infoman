@@ -1,0 +1,18 @@
+<div class="takecanvasshot">
+  <canvas class="takecanvasshot-canvas"></canvas>
+</div>
+
+<script>
+  var Takecanvasshot = (function(){
+    function Takecanvasshot(){
+      this.canvas= C('takecanvasshot-canvas');
+    }
+
+    Takecanvasshot.prototype.setCanvas = function(img){
+      this.canvas.getContext('2d').drawImage(img, 0, 0, this.canvas.width, this.canvas.height);
+    };
+
+    return Takecanvasshot;
+  }());
+  var takecanvasshot = new Takecanvasshot();
+</script>

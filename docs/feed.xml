@@ -1,33 +1,33 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.2">Jekyll</generator><link href="https://baudo2048.github.io/infoman/feed.xml" rel="self" type="application/atom+xml" /><link href="https://baudo2048.github.io/infoman/" rel="alternate" type="text/html" /><updated>2018-02-26T16:19:37+01:00</updated><id>https://baudo2048.github.io/infoman/</id><title type="html">Giuseppe Baudo</title><subtitle>Pedagogia, Antropologia, Psicologia, Pedagogia Speciale.</subtitle><entry><title type="html">Lambda calcolo</title><link href="https://baudo2048.github.io/infoman/2018/02/15/lambda-calcol.html" rel="alternate" type="text/html" title="Lambda calcolo" /><published>2018-02-15T00:00:00+01:00</published><updated>2018-02-15T00:00:00+01:00</updated><id>https://baudo2048.github.io/infoman/2018/02/15/lambda-calcol</id><content type="html" xml:base="https://baudo2048.github.io/infoman/2018/02/15/lambda-calcol.html">&lt;p&gt;&lt;img src=&quot;https://baudo2048.github.io/infoman/assets/img/lambda.png&quot; alt=&quot;lambda&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-02-27T15:56:16+01:00</updated><id>http://localhost:4000/</id><title type="html">Giuseppe Baudo</title><subtitle>Pedagogia, Antropologia, Psicologia, Pedagogia Speciale.</subtitle><entry><title type="html">Lambda calcolo</title><link href="http://localhost:4000/2018/02/15/lambda-calcol.html" rel="alternate" type="text/html" title="Lambda calcolo" /><published>2018-02-15T00:00:00+01:00</published><updated>2018-02-15T00:00:00+01:00</updated><id>http://localhost:4000/2018/02/15/lambda-calcol</id><content type="html" xml:base="http://localhost:4000/2018/02/15/lambda-calcol.html">&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/lambda.png&quot; alt=&quot;lambda&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Introduction&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;History&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://baudo2048.github.io/infoman/assets/img/intro-lambda.png&quot; alt=&quot;intro-lambda&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/intro-lambda.png&quot; alt=&quot;intro-lambda&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Computability&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://baudo2048.github.io/infoman/assets/img/intro-lambda-2.png&quot; alt=&quot;intro-lambda-2&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/intro-lambda-2.png&quot; alt=&quot;intro-lambda-2&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Type-free lambda calculus - aka gli passo quello che voglio&lt;/strong&gt;
-&lt;img src=&quot;https://baudo2048.github.io/infoman/assets/img/type-free-lambda.png&quot; alt=&quot;type-free-lambda&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;http://localhost:4000/assets/img/type-free-lambda.png&quot; alt=&quot;type-free-lambda&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;There exist a typed version introduced by Curry (1934) (the father of hakell lang) for
 the so called combinatory logic, a variant of the lambda calculus and in Church
 (1940).&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://baudo2048.github.io/infoman/assets/img/combinatory-logic.png&quot; alt=&quot;combinatory-logic&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/combinatory-logic.png&quot; alt=&quot;combinatory-logic&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Combinatory_logic&quot;&gt;combinatory-logic&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://baudo2048.github.io/infoman/assets/img/curry-1.png&quot; alt=&quot;curry-1&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/curry-1.png&quot; alt=&quot;curry-1&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://baudo2048.github.io/infoman/assets/img/curry-2.png&quot; alt=&quot;curry-2&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/curry-2.png&quot; alt=&quot;curry-2&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://baudo2048.github.io/infoman/assets/img/curry-var-1.png&quot; alt=&quot;curry-var-1&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/curry-var-1.png&quot; alt=&quot;curry-var-1&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://baudo2048.github.io/infoman/assets/img/curry-3.png&quot; alt=&quot;curry-3&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/curry-3.png&quot; alt=&quot;curry-3&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Type-free lambda calculus - definition&lt;/strong&gt;&lt;br /&gt;
 Prendere appunti su come si definisce un linguaggio. Perchè il Prof. definisce
@@ -35,7 +35,7 @@ un linguaggio? cos’è un linguaggio?&lt;/p&gt;
 
 &lt;p&gt;Ci sono solo dure regole: substitution e …?&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Meta-teoria del Lambda Calcolo non tipato&lt;/strong&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Plain Old Text</title><link href="https://baudo2048.github.io/infoman/2018/02/13/plain-old-text.html" rel="alternate" type="text/html" title="Plain Old Text" /><published>2018-02-13T00:00:00+01:00</published><updated>2018-02-13T00:00:00+01:00</updated><id>https://baudo2048.github.io/infoman/2018/02/13/plain-old-text</id><content type="html" xml:base="https://baudo2048.github.io/infoman/2018/02/13/plain-old-text.html">&lt;p&gt;What if all knowledge would be only plain old text? The reason is very simple
+&lt;p&gt;&lt;strong&gt;Meta-teoria del Lambda Calcolo non tipato&lt;/strong&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Plain Old Text</title><link href="http://localhost:4000/2018/02/13/plain-old-text.html" rel="alternate" type="text/html" title="Plain Old Text" /><published>2018-02-13T00:00:00+01:00</published><updated>2018-02-13T00:00:00+01:00</updated><id>http://localhost:4000/2018/02/13/plain-old-text</id><content type="html" xml:base="http://localhost:4000/2018/02/13/plain-old-text.html">&lt;p&gt;What if all knowledge would be only plain old text? The reason is very simple
 the problem is to go directly to the main goals. So here I am!&lt;/p&gt;
 
 &lt;p&gt;What I need is only two hour a day of writing activity, maybe I may return
@@ -46,9 +46,9 @@ to old abitudini e magari chissà…&lt;/p&gt;
 &lt;p&gt;So, how to improve our knowledge of world and increase our positions in
 society. What are limiting your life to achieve your goals?&lt;/p&gt;
 
-&lt;p&gt;Time is the king…&lt;/p&gt;</content><author><name></name></author><summary type="html">What if all knowledge would be only plain old text? The reason is very simple the problem is to go directly to the main goals. So here I am!</summary></entry><entry><title type="html">Peer-to-Peer Development</title><link href="https://baudo2048.github.io/infoman/2018/02/13/peer-to-peer-development.html" rel="alternate" type="text/html" title="Peer-to-Peer Development" /><published>2018-02-13T00:00:00+01:00</published><updated>2018-02-13T00:00:00+01:00</updated><id>https://baudo2048.github.io/infoman/2018/02/13/peer-to-peer-development</id><content type="html" xml:base="https://baudo2048.github.io/infoman/2018/02/13/peer-to-peer-development.html">&lt;p&gt;&lt;img src=&quot;/assets/img/peerjs.png&quot; alt=&quot;peerjs&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Time is the king…&lt;/p&gt;</content><author><name></name></author><summary type="html">What if all knowledge would be only plain old text? The reason is very simple the problem is to go directly to the main goals. So here I am!</summary></entry><entry><title type="html">Peer-to-Peer Development</title><link href="http://localhost:4000/2018/02/13/peer-to-peer-development.html" rel="alternate" type="text/html" title="Peer-to-Peer Development" /><published>2018-02-13T00:00:00+01:00</published><updated>2018-02-13T00:00:00+01:00</updated><id>http://localhost:4000/2018/02/13/peer-to-peer-development</id><content type="html" xml:base="http://localhost:4000/2018/02/13/peer-to-peer-development.html">&lt;p&gt;&lt;img src=&quot;/assets/img/peerjs.png&quot; alt=&quot;peerjs&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;You need to know about ssl keys and certificates.&lt;/p&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Popolo Della Famiglia - Bologna</title><link href="https://baudo2048.github.io/infoman/2018/02/11/pdf-bologna.html" rel="alternate" type="text/html" title="Popolo Della Famiglia - Bologna" /><published>2018-02-11T00:00:00+01:00</published><updated>2018-02-11T00:00:00+01:00</updated><id>https://baudo2048.github.io/infoman/2018/02/11/pdf-bologna</id><content type="html" xml:base="https://baudo2048.github.io/infoman/2018/02/11/pdf-bologna.html">&lt;p&gt;Non poteva che cadere nel giorno di Lourdes questo post perchè…&lt;/p&gt;
+&lt;p&gt;You need to know about ssl keys and certificates.&lt;/p&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Popolo Della Famiglia - Bologna</title><link href="http://localhost:4000/2018/02/11/pdf-bologna.html" rel="alternate" type="text/html" title="Popolo Della Famiglia - Bologna" /><published>2018-02-11T00:00:00+01:00</published><updated>2018-02-11T00:00:00+01:00</updated><id>http://localhost:4000/2018/02/11/pdf-bologna</id><content type="html" xml:base="http://localhost:4000/2018/02/11/pdf-bologna.html">&lt;p&gt;Non poteva che cadere nel giorno di Lourdes questo post perchè…&lt;/p&gt;
 
 &lt;p&gt;Il papa…&lt;/p&gt;
 
@@ -56,8 +56,8 @@ society. What are limiting your life to achieve your goals?&lt;/p&gt;
 
 &lt;p&gt;Chi è adinolfi&lt;/p&gt;
 
-&lt;p&gt;Chi è spaccapaniccia&lt;/p&gt;</content><author><name></name></author><summary type="html">Non poteva che cadere nel giorno di Lourdes questo post perchè…</summary></entry><entry><title type="html">Logics for Informatics</title><link href="https://baudo2048.github.io/infoman/education/logics/2018/02/09/logics-for-informatics.html" rel="alternate" type="text/html" title="Logics for Informatics" /><published>2018-02-09T00:00:00+01:00</published><updated>2018-02-09T00:00:00+01:00</updated><id>https://baudo2048.github.io/infoman/education/logics/2018/02/09/logics-for-informatics</id><content type="html" xml:base="https://baudo2048.github.io/infoman/education/logics/2018/02/09/logics-for-informatics.html">&lt;p&gt;&lt;strong&gt;Logics Operators (symbols)&lt;/strong&gt;&lt;br /&gt;
-&lt;img src=&quot;https://baudo2048.github.io/infoman/assets/img/logics-operators.png&quot; alt=&quot;logics-operators&quot; /&gt;
+&lt;p&gt;Chi è spaccapaniccia&lt;/p&gt;</content><author><name></name></author><summary type="html">Non poteva che cadere nel giorno di Lourdes questo post perchè…</summary></entry><entry><title type="html">Logics for Informatics</title><link href="http://localhost:4000/education/logics/2018/02/09/logics-for-informatics.html" rel="alternate" type="text/html" title="Logics for Informatics" /><published>2018-02-09T00:00:00+01:00</published><updated>2018-02-09T00:00:00+01:00</updated><id>http://localhost:4000/education/logics/2018/02/09/logics-for-informatics</id><content type="html" xml:base="http://localhost:4000/education/logics/2018/02/09/logics-for-informatics.html">&lt;p&gt;&lt;strong&gt;Logics Operators (symbols)&lt;/strong&gt;&lt;br /&gt;
+&lt;img src=&quot;http://localhost:4000/assets/img/logics-operators.png&quot; alt=&quot;logics-operators&quot; /&gt;
 cercare su google: provable symbols
 Questo in pratica dovrebbe voler dire che dal sistema lambda è possibile
 dimostrare …&lt;/p&gt;
@@ -66,7 +66,7 @@ dimostrare …&lt;/p&gt;
 boundaries come from and what is the sequence of concepts a student needs to
 master before, during and after the course period.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://baudo2048.github.io/infoman/assets/img/banner-logica.png&quot; alt=&quot;logica&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/banner-logica.png&quot; alt=&quot;logica&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The main focus of the logics at informatics is to explain what is computation.&lt;/p&gt;
 
@@ -79,7 +79,7 @@ definitions.&lt;/p&gt;
 Second-order logic consist of first-order logic plus the power to quantify
 over relations on the universe.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://baudo2048.github.io/infoman/assets/img/second-order-logic.png&quot; alt=&quot;second-oder-logic&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/second-order-logic.png&quot; alt=&quot;second-oder-logic&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Fagin theorem&lt;/strong&gt;
 Says that the queries computable in NP are exactly the second-order existential
@@ -88,10 +88,10 @@ those computable in the polynomial-time hierarchy.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Interleaving&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://baudo2048.github.io/infoman/assets/img/logics-systems-banner.png&quot; alt=&quot;system-banner&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/logics-systems-banner.png&quot; alt=&quot;system-banner&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Struttura di Kripke&lt;/strong&gt;
-&lt;img src=&quot;https://baudo2048.github.io/infoman/assets/img/kripke.png&quot; alt=&quot;kripke&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;http://localhost:4000/assets/img/kripke.png&quot; alt=&quot;kripke&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Oral Exams&lt;/strong&gt;
 Dimostrare che per ogni formula esiste un algoritmo NP.&lt;/p&gt;
@@ -106,7 +106,7 @@ Dimostrare che per ogni formula esiste un algoritmo NP.&lt;/p&gt;
 •	Qual è la più semplice struttura in matematica? I numeri naturali!
 Preparativi per il teorema di Bohm&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://baudo2048.github.io/infoman/assets/img/teorie-equazionali.png&quot; alt=&quot;teorie-equazionali&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/teorie-equazionali.png&quot; alt=&quot;teorie-equazionali&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Logica e Verifica (di sistemi)
 MATEMATICA
@@ -155,7 +155,7 @@ Let R \subset D^n&lt;/p&gt;
 Database: datalog, passaggi da algebra relazionale a datalog o non so consa
 Verifica: CTL e CTL* e come si passa da uno all’altro.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://baudo2048.github.io/infoman/assets/img/datalog.png&quot; alt=&quot;datalog&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">Logics Operators (symbols) cercare su google: provable symbols Questo in pratica dovrebbe voler dire che dal sistema lambda è possibile dimostrare …</summary></entry><entry><title type="html">Eclipse Plugin Development</title><link href="https://baudo2048.github.io/infoman/devops/micro-operation-development/2018/02/06/eclipse-plugin-development.html" rel="alternate" type="text/html" title="Eclipse Plugin Development" /><published>2018-02-06T08:56:00+01:00</published><updated>2018-02-06T08:56:00+01:00</updated><id>https://baudo2048.github.io/infoman/devops/micro-operation-development/2018/02/06/eclipse-plugin-development</id><content type="html" xml:base="https://baudo2048.github.io/infoman/devops/micro-operation-development/2018/02/06/eclipse-plugin-development.html">&lt;p&gt;&lt;strong&gt;Introduction&lt;/strong&gt;&lt;br /&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/datalog.png&quot; alt=&quot;datalog&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">Logics Operators (symbols) cercare su google: provable symbols Questo in pratica dovrebbe voler dire che dal sistema lambda è possibile dimostrare …</summary></entry><entry><title type="html">Eclipse Plugin Development</title><link href="http://localhost:4000/devops/micro-operation-development/2018/02/06/eclipse-plugin-development.html" rel="alternate" type="text/html" title="Eclipse Plugin Development" /><published>2018-02-06T08:56:00+01:00</published><updated>2018-02-06T08:56:00+01:00</updated><id>http://localhost:4000/devops/micro-operation-development/2018/02/06/eclipse-plugin-development</id><content type="html" xml:base="http://localhost:4000/devops/micro-operation-development/2018/02/06/eclipse-plugin-development.html">&lt;p&gt;&lt;strong&gt;Introduction&lt;/strong&gt;&lt;br /&gt;
 Eclipse plugin development is a fun experience even though it has a lot of
 things we need to know to master the ability to convert an operation into an
 automation.&lt;/p&gt;
@@ -214,7 +214,7 @@ selezionabile anche da windows stesso, ma questo è un altro discorso.&lt;/p&gt;
 This is an insight of the eclipse workbench structure. In order to get control
 over the widget in the views we need to start here.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://baudo2048.github.io/infoman/assets/img/strutturaEclipseWorkbench1.png&quot; alt=&quot;My helpful screenshot&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/strutturaEclipseWorkbench1.png&quot; alt=&quot;My helpful screenshot&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;For now we may consider window and workbench as denoting the same thing.&lt;/p&gt;
 
@@ -232,7 +232,7 @@ over the widget in the views we need to start here.&lt;/p&gt;
 component within a workbench page. Hence pay attentions because it isn’t
 the code itself but it is that ui component in which your code lives.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://baudo2048.github.io/infoman/assets/img/eclipse-ui-editor.png&quot; alt=&quot;ui-editor&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/eclipse-ui-editor.png&quot; alt=&quot;ui-editor&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Widget ???&lt;/p&gt;
 
@@ -274,11 +274,11 @@ For fastest msgbox you can use:&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://wiki.eclipse.org/Platform_UI/Notifications&quot;&gt;Platform UI/Notification&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://baudo2048.github.io/infoman/assets/img/t-029c7b48.png&quot; alt=&quot;notification&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/t-029c7b48.png&quot; alt=&quot;notification&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://baudo2048.github.io/infoman/assets/img/t-958e4d17.png&quot; alt=&quot;event&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/t-958e4d17.png&quot; alt=&quot;event&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://baudo2048.github.io/infoman/assets/img/t-c9cc0de2.png&quot; alt=&quot;trigger&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/t-c9cc0de2.png&quot; alt=&quot;trigger&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Per usare il meccanismo delle notification occorre utilizzare accanto ad esso
 un meccanismo di scheduling.&lt;/p&gt;
@@ -295,7 +295,7 @@ un meccanismo di scheduling.&lt;/p&gt;
 not much work.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Fragment vs Feature&lt;/strong&gt;
-&lt;img src=&quot;https://baudo2048.github.io/infoman/assets/img/eclipse-jargon.png&quot; alt=&quot;eclipse-jargon&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;http://localhost:4000/assets/img/eclipse-jargon.png&quot; alt=&quot;eclipse-jargon&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Preferences&lt;/strong&gt;&lt;/p&gt;
 
@@ -308,11 +308,11 @@ not much work.&lt;/p&gt;
 [QUESTIONS-1]: https://wiki.eclipse.org/FAQ_How_do_I_find_the_active_workbench_page%3F&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;Jazz - Rational Team Concert&lt;/em&gt;&lt;br /&gt;
-[RTC]: https://www.ibm.com/developerworks/library/d-extend-customize-rational-team-concert-continuous-integration/index.html&lt;/p&gt;</content><author><name></name></author><summary type="html">Introduction Eclipse plugin development is a fun experience even though it has a lot of things we need to know to master the ability to convert an operation into an automation.</summary></entry><entry><title type="html">Google Chrome Plugin Development</title><link href="https://baudo2048.github.io/infoman/2018/02/06/chrome-plugin-development.html" rel="alternate" type="text/html" title="Google Chrome Plugin Development" /><published>2018-02-06T00:00:00+01:00</published><updated>2018-02-06T00:00:00+01:00</updated><id>https://baudo2048.github.io/infoman/2018/02/06/chrome-plugin-development</id><content type="html" xml:base="https://baudo2048.github.io/infoman/2018/02/06/chrome-plugin-development.html"></content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Security Management</title><link href="https://baudo2048.github.io/infoman/2018/02/02/security-management.html" rel="alternate" type="text/html" title="Security Management" /><published>2018-02-02T00:00:00+01:00</published><updated>2018-02-02T00:00:00+01:00</updated><id>https://baudo2048.github.io/infoman/2018/02/02/security-management</id><content type="html" xml:base="https://baudo2048.github.io/infoman/2018/02/02/security-management.html">&lt;p&gt;Security management…&lt;/p&gt;
+[RTC]: https://www.ibm.com/developerworks/library/d-extend-customize-rational-team-concert-continuous-integration/index.html&lt;/p&gt;</content><author><name></name></author><summary type="html">Introduction Eclipse plugin development is a fun experience even though it has a lot of things we need to know to master the ability to convert an operation into an automation.</summary></entry><entry><title type="html">Google Chrome Plugin Development</title><link href="http://localhost:4000/2018/02/06/chrome-plugin-development.html" rel="alternate" type="text/html" title="Google Chrome Plugin Development" /><published>2018-02-06T00:00:00+01:00</published><updated>2018-02-06T00:00:00+01:00</updated><id>http://localhost:4000/2018/02/06/chrome-plugin-development</id><content type="html" xml:base="http://localhost:4000/2018/02/06/chrome-plugin-development.html"></content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Security Management</title><link href="http://localhost:4000/2018/02/02/security-management.html" rel="alternate" type="text/html" title="Security Management" /><published>2018-02-02T00:00:00+01:00</published><updated>2018-02-02T00:00:00+01:00</updated><id>http://localhost:4000/2018/02/02/security-management</id><content type="html" xml:base="http://localhost:4000/2018/02/02/security-management.html">&lt;p&gt;Security management…&lt;/p&gt;
 
 &lt;p&gt;OpenSSL&lt;/p&gt;
 
-&lt;p&gt;https://www.ssl.com/online-csr-and-key-generator/&lt;/p&gt;</content><author><name></name></author><summary type="html">Security management…</summary></entry><entry><title type="html">GitHub WebHook</title><link href="https://baudo2048.github.io/infoman/2018/02/02/github-webhook.html" rel="alternate" type="text/html" title="GitHub WebHook" /><published>2018-02-02T00:00:00+01:00</published><updated>2018-02-02T00:00:00+01:00</updated><id>https://baudo2048.github.io/infoman/2018/02/02/github-webhook</id><content type="html" xml:base="https://baudo2048.github.io/infoman/2018/02/02/github-webhook.html">&lt;p&gt;GitHub WebHook&lt;/p&gt;
+&lt;p&gt;https://www.ssl.com/online-csr-and-key-generator/&lt;/p&gt;</content><author><name></name></author><summary type="html">Security management…</summary></entry><entry><title type="html">GitHub WebHook</title><link href="http://localhost:4000/2018/02/02/github-webhook.html" rel="alternate" type="text/html" title="GitHub WebHook" /><published>2018-02-02T00:00:00+01:00</published><updated>2018-02-02T00:00:00+01:00</updated><id>http://localhost:4000/2018/02/02/github-webhook</id><content type="html" xml:base="http://localhost:4000/2018/02/02/github-webhook.html">&lt;p&gt;GitHub WebHook&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/img/github-webhooks.png&quot; alt=&quot;github-webhooks&quot; /&gt;&lt;/p&gt;
 
@@ -326,7 +326,7 @@ di un server web e gestito live da una serie di devops.&lt;/p&gt;
 
 &lt;p&gt;Passiamo a Wiresharke
 wiresharke sniffing.
-wiresharke development release cosaaa?&lt;/p&gt;</content><author><name></name></author><summary type="html">GitHub WebHook</summary></entry><entry><title type="html">Java Development</title><link href="https://baudo2048.github.io/infoman/2018/02/01/java-development.html" rel="alternate" type="text/html" title="Java Development" /><published>2018-02-01T01:01:01+01:00</published><updated>2018-02-01T01:01:01+01:00</updated><id>https://baudo2048.github.io/infoman/2018/02/01/java-development</id><content type="html" xml:base="https://baudo2048.github.io/infoman/2018/02/01/java-development.html">&lt;p&gt;First of all configure a dialects like groovy, extent, etc.&lt;/p&gt;
+wiresharke development release cosaaa?&lt;/p&gt;</content><author><name></name></author><summary type="html">GitHub WebHook</summary></entry><entry><title type="html">Java Development</title><link href="http://localhost:4000/2018/02/01/java-development.html" rel="alternate" type="text/html" title="Java Development" /><published>2018-02-01T01:01:01+01:00</published><updated>2018-02-01T01:01:01+01:00</updated><id>http://localhost:4000/2018/02/01/java-development</id><content type="html" xml:base="http://localhost:4000/2018/02/01/java-development.html">&lt;p&gt;First of all configure a dialects like groovy, extent, etc.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Move Files&lt;/strong&gt;&lt;/p&gt;
 

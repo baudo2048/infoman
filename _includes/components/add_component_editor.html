@@ -1,0 +1,65 @@
+<!--
+  DEPENDENCIES
+  - crud services
+
+  class convention: file-name-#
+-->
+
+<div class="add-component-editor center-fixed">
+    <h5 class="center-fixed 1">Create new Component</h5>
+    <input class="center-fixed 1" type="text">
+    <textarea class="center-fixed 2"></textarea>
+    <textarea class="center-fixed 3"></textarea>
+    <textarea class="center-fixed 4"></textarea>
+    <textarea class="center-fixed 5"></textarea>
+    <i class="add-component-confirm-item material-icons">done</i>
+</div>
+
+
+
+<style>
+
+</style>
+
+<script>
+var AddComponentEditor = (function() {
+    var th;
+    var confirmButton;
+    var currentItem;
+
+    function AddComponentEditor(){
+      this.currentItem = 0;
+      this.th = document.getElementsByClassName('add-component-editor')[0];
+      this.confirmButton = document.getElementsByClassName('add-component-confirm-item')[0];
+    }
+
+    AddComponentEditor.prototype.next = function(){
+
+    };
+
+    AddComponentEditor.prototype.prec = function(){
+
+    };
+
+     return AddComponentEditor;
+}());
+
+var addComponentEditor = new AddComponentEditor();
+
+
+// addComponent.confirmButton.onclick = function(){
+//   console.log('confirmButton clicked');
+//   var docToStore = {
+//     name: $('.new-comp-name').val(),
+//     title: $('.new-comp-name').val(),  //campo che serve a post-list-comp
+//     description: $('.new-comp-description').val(),
+//     html: $('.new-comp-html').val(),
+//     css: $('.new-comp-css').val(),
+//     js: $('.new-comp-js').val()
+//   };
+//   save(docToStore, 'components');
+//
+//   $(th).hide();
+// };
+
+</script>

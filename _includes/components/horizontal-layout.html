@@ -16,10 +16,7 @@
 </div>
 
 <style>
-* {
-  padding:0;
-  margin:0;
-}
+
   .header-default-component{
     background-color: green;
   }
@@ -37,23 +34,10 @@
   var HorizontalLayout = (function(){
     console.log('horizontal-layout activated');
     function HorizontalLayout (){
-      this.headerHeight = $('.header-default-component').css('height').replace('px','');
+
     }
-
-    HorizontalLayout.prototype.getHeaderHeight = function(){
-      return $('.header-default-component').css('height').replace('px','')-10;
-    };
-
-    HorizontalLayout.prototype.resize = function(that){
-      that.mainHeight = window.innerHeight-that.getHeaderHeight();
-      $('main').css('height',that.mainHeight);
-    };
-
-
     return HorizontalLayout;
   }());
 
   var horizontalLayout = new HorizontalLayout();
-  window.addEventListener('resize', horizontalLayout.resize(horizontalLayout));
-
 </script>

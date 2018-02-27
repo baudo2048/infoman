@@ -1,7 +1,8 @@
 <!-- Attenzione ci sono dipendenze ad altro HTML e altro JS -->
-<div class="menu-component">
+<div class="menu">
 	<!-- <span class="menu-caption"><i class="material-icons">apps</i></span> -->
 	<span class="menu-item home-item"><i class="material-icons">home</i></span>
+	<span class="menu-item open-item"><i class="material-icons">folder_open</i></span>
 	<span class="menu-item add-item"><i class="material-icons">add</i></span>
 	<!-- <span class="menu-item about-item"><i class="material-icons">info</i></span> -->
 	<!-- <span class="menu-item"><i class="material-icons">restore</i></span> -->
@@ -16,12 +17,14 @@
 	<span class="menu-item test-item"><i class="material-icons">trending_up</i></span>
 	<span class="menu-item audiotrack-item"><i class="material-icons">audiotrack</i></span>
 	<span class="menu-item search-item"><i class="material-icons">search</i></span>
-	<span class="menu-item webphone-item"><i class="material-icons">record_voice_over</i></span>
+	<span class="menu-item audioshare-item"><i class="material-icons">record_voice_over</i></span>
+	<span class="menu-item screenshot-item"><i class="material-icons">desktop_windows</i></span>
+	<span class="menu-item screenshare-item"><i class="material-icons">screen_share</i></span>
 </div>
 
 <style>
-.menu-component {
-	background-color: yellow;
+.menu {
+	//background-color: yellow;
 }
 </style>
 
@@ -85,8 +88,8 @@ $(document).ready(function(){
 
 	$('.menu-item.add-item').click( () => {
 		console.log('add-item clicked');
-		$('.home-content-manager > *').hide(); // hide all other - BAD PRACTICE
-		$('.item-chooser-comp').show();
+		//$('.windowable-component-manager > *').hide(); // hide all other - BAD PRACTICE
+		$('.item-chooser').show();
 	});
 
 	$('.menu-item.test-item').click( () => {
@@ -110,8 +113,8 @@ $(document).ready(function(){
 		//document.dispatchEvent(new Event('app.events.menu.itemClicked')); //IMPARARE A PASSARE OBJ A EVENT
 	});
 
-	$('.webphone-item').click(function(){
-		console.log('webphone-item clicked');
+	$('.audioshare-item').click(function(){
+		console.log('audioshare-item clicked');
 		$('.home-content-manager > *').hide(); // hide all other - BAD PRACTICE
 		$('.webphone-component').show();
 		//document.dispatchEvent(new Event('app.events.menu.itemClicked')); //IMPARARE A PASSARE OBJ A EVENT

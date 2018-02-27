@@ -1,16 +1,16 @@
-<div class="item-chooser-comp">
+<div class="item-chooser">
   <div class="gallery item-chooser-new-doc">
       <i class="material-icons">note_add</i>
   </div>
 
-  <div class="gallery item-chooser-comp-component">
+  <div class="gallery item-chooser-component">
       <i class="material-icons">code</i>
   </div>
 
 </div>
 
 <style>
-.item-chooser-comp{
+.item-chooser{
   margin: auto;
   left:0;
   right: 0;
@@ -43,10 +43,12 @@ div.desc {
 
 <script>
 (function(){
-  var th = '.item-chooser-comp';
-  var comp =".item-chooser-comp-component";
+  console.log('item-chooser activated');
+  // var notaion: write down all dependencies
+  var th = '.item-chooser';
+  var comp =".item-chooser-component";
   var itemDoc = '.gallery.item-chooser-new-doc'
-  var dep = '.add-component-component';
+  var dep = '.add-component';
   var addDoc = '.add-document-component';
   var addDoc2 = '.generic-editor-component';
 

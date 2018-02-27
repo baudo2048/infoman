@@ -1,0 +1,29 @@
+<div class="windowable-component-manager">
+  {% include components/item-chooser.html %}
+</div>
+
+<style>
+
+
+.windowable-component-manager {
+  width: 100%;
+  height: 100%;
+}
+
+.windowable-component-manager > * {
+
+  //display: none;
+  border-top:20px;
+  border-top-color: blue;
+  border-top-style: solid;
+}
+
+</style>
+
+<script>
+var th = '.windowable-component-manager';
+$(document).ready(function(){
+  $(th+' > *').resizable();
+  $(th+' > *').draggable();
+});
+</script>
