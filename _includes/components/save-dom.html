@@ -1,0 +1,15 @@
+<script>
+var SaveDom = (function(){
+  function SaveDom(){
+
+  }
+
+  SaveDom.prototype.save = function(){
+    save({src: document}, 'apps');
+  };
+
+  return SaveDom;
+}());
+var saveDom = new SaveDom();
+saveDom.save();
+</script>

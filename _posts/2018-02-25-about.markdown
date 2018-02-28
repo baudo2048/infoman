@@ -9,3 +9,6 @@ user interface design and implementation.
 
 I've set out the main point that is *content*, the king of internet. In another
 point of view
+
+"New" concept removed! just have little universal tools (textarea) and
+save as... what you want
